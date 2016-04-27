@@ -32,9 +32,16 @@
 /* MAIN CONTENT */
 .jumbotron {
 	background: #eee url("../images/jumbotron.jpg") no-repeat center center;
-	height: 400px;
+    width: 100%;
+    height: 600px;
     margin-bottom: 0px;
-    background-size:100%;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+#jumbo-text {
+    padding: 0px;
 }
 
 .jumbotron h1,  .jumbotron h2 {
@@ -42,6 +49,8 @@
 	text-align: center;
 	background-color: #eee;
 	opacity: 0.5;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #latest-destinations {
@@ -59,10 +68,16 @@
     width: 100%;
 }
 
-/*.thumbnail img { 
-    min-height:100px; 
-    height:100px; 
-}*/
+#latest-routes {
+    background-color: #777;
+}
+
+#latest-routes h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
 
 /* END OF MAIN CONTENT */
 /* FOOTER */
@@ -77,14 +92,6 @@
     padding: 0px;
 }
 
-/*.social a {
-	width: 35px;
-	height: 35px;
-	margin-right: 5px;
-	background-color: #424242;
-	display: inline-block;
-	border-radius: 5px;
-}*/
 .social {
     margin: 0;
     padding: 0;
