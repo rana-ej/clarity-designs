@@ -1,7 +1,7 @@
 .navbar {
 	background-color: #333333;
 	color: #ffffff;
-	height: 150px;
+	height: 120px;
     margin-bottom: 0px;
     border-radius: 0px;
     border: none;
@@ -9,22 +9,61 @@
 
 .navbar-nav {
 	font-size: 200%;
-	margin-top: 50px;
-	margin-right: 50px;
 }
 
 .navbar-default .navbar-nav>li>a {
     color: #ffffff;
+    margin-top: 35px;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #1aa2d9;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-	background-color: ;
+	color: #1aa2d9;
+    background: none;
 }
 
 #logo {
+    font-family: 'Fontdiner Swanky', cursive;
 	position: absolute;
 	display: inline-block;
-	margin-left: 50px;
+	margin: 30px 30px;
+    text-transform: uppercase;
+    font-size: 350%;
+    color: #ffe67b;
+}
+
+.navbar-nav > li {
+    margin: 0px 20px;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    background-color: #444444;
+    font-size: 70%;
+    width: 100%;
+    border-top: solid 5px #1aa2d9;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background: none;
+    color: #1aa2d9;
+}
+
+.navbar-nav > li > .dropdown-menu > li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dropdown-menu>li>a {
+    color: #ffffff;
+    background: none;
+}
+
+.dropdown-menu>li>a:hover {
+    color: #1aa2d9;
+    background: none;
 }
 
 /* END OF HEADER */
@@ -37,7 +76,9 @@
     margin-bottom: 0px;
     background-size: cover;
     position: relative;
-    overflow: hidden;
+    /*erflow: hidden;
+    border-top: solid 15px #2e6fab;
+    border-bottom: solid 15px #2e6fab;*/
 }
 
 #jumbo-text {
@@ -53,8 +94,13 @@
     padding-bottom: 10px;
 }
 
+.read-more-button {
+    background-color: #2e6fab;
+    border-color: #2e6fab;
+}
+
 #latest-destinations {
-	background-color: #a9a18c;
+	background-color: #e2cfb0;
 }
 
 #latest-destinations h1 {
@@ -69,7 +115,7 @@
 }
 
 #latest-routes {
-    background-color: #777;
+    background-color: #eaebeb;
 }
 
 #latest-routes h1 {
@@ -80,6 +126,7 @@
 }
 
 /* END OF MAIN CONTENT */
+
 /* FOOTER */
 .panel-footer {
 	background-color: #333333;
