@@ -1,3 +1,4 @@
+/* FRONT PAGE HEADER */
 .my-front-navbar {
 	background-color: #333333;
 	color: #ffffff;
@@ -6,8 +7,31 @@
     border-radius: 0px;
     border: none;
 }
+/* END OF FRONT PAGE HEADER */
 
-.navbar-nav {
+
+/* OTHER PAGES HEADER */
+.my-pages-navbar {
+    background-color: #333333;
+    height: 120px;
+    border: none;
+    border-radius: 0px;
+}
+
+.my-pages-navbar .container-fluid {
+    padding-top: 35px;
+}
+
+.my-pages-navbar .navbar-nav>li>a:focus, .my-pages-navbar .navbar-nav>li>a:hover {
+    color: #1aa2d9;
+}
+
+.my-pages-navbar .navbar-nav>.active>a, .my-pages-navbar .navbar-nav>.active>a:focus, .my-pages-navbar .navbar-nav>.active>a:hover {
+    color: #1aa2d9;
+    background: none;
+}
+
+/*.navbar-nav {
 	font-size: 200%;
 }
 
@@ -16,14 +40,9 @@
     margin-top: 35px;
 }
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #1aa2d9;
-}
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-	color: #1aa2d9;
-    background: none;
-}
+
+
 
 #logo {
     font-family: 'Fontdiner Swanky', cursive;
@@ -65,8 +84,8 @@
     color: #1aa2d9;
     background: none;
 }
-
-/* END OF HEADER */
+*/
+/* END OF OTHER PAGES HEADER */
 
 /* MAIN CONTENT */
 .my-front-jumbo {
@@ -76,9 +95,10 @@
     margin-bottom: 0px;
     background-size: cover;
     position: relative;
-    /*erflow: hidden;
-    border-top: solid 15px #2e6fab;
-    border-bottom: solid 15px #2e6fab;*/
+    -webkit-transition: all 2000ms linear;
+    -moz-transition: all 2000ms linear;
+    -o-transition: all 2000ms linear;
+    -ms-transition: all 2000ms linear;
 }
 
 #jumbo-text {
@@ -110,8 +130,33 @@
     margin-top: 50px;
 }
 
-.thumbnail a>img, .thumbnail>img {
+.my-destination-thumbnail {
+    overflow: hidden;
+}
+
+.my-thumbnail-holder {
     width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.my-destination-thumbnail img {
+    overflow: hidden;
+    -webkit-transition: all 2s linear; /* Safari and Chrome */
+    -moz-transition: all 2s linear; /* Firefox */
+    -ms-transition: all 2s linear; /* IE 9 */
+    -o-transition: all 2s linear; /* Opera */
+    transition: all 2s linear;
+    width: 100%;
+    animation-fill-mode: forwards;
+}
+
+.my-destination-thumbnail:hover img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
 }
 
 #latest-routes {
