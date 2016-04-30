@@ -16,34 +16,65 @@
     height: 120px;
     border: none;
     border-radius: 0px;
+    margin-bottom: 0px;
 }
 
 .my-pages-navbar .container-fluid {
     padding-top: 35px;
 }
 
-.my-pages-navbar .navbar-nav>li>a:focus, .my-pages-navbar .navbar-nav>li>a:hover {
+.my-pages-menu li {
+
+}
+
+.my-pages-navbar .my-pages-menu>li>a {
+    font-size: 1.2em;
+    color: #ffffff;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+.my-pages-navbar .my-pages-menu>li>a:focus, .my-pages-navbar .my-pages-menu>li>a:hover {
     color: #1aa2d9;
 }
 
-.my-pages-navbar .navbar-nav>.active>a, .my-pages-navbar .navbar-nav>.active>a:focus, .my-pages-navbar .navbar-nav>.active>a:hover {
+.my-pages-navbar .my-pages-menu>.active>a, .my-pages-navbar .my-pages-menu>.active>a:focus, .my-pages-navbar .my-pages-menu>.active>a:hover {
     color: #1aa2d9;
     background: none;
 }
 
-/*.navbar-nav {
-	font-size: 200%;
+.my-pages-navbar .my-pages-menu>.open>a, .my-pages-navbar .my-pages-menu>.open>a:focus, .my-pages-navbar .my-pages-menu>.open>a:hover {
+    background: none;
+    color: #1aa2d9;
 }
 
-.navbar-default .navbar-nav>li>a {
+.my-pages-menu > li > .my-menu-dropdown {
+    background-color: #444444;
+    font-size: 70%;
+    width: 100%;
+    border-radius: 0px;
+    border-top: solid 4px #1aa2d9;
+}
+
+.my-pages-menu > li > .my-menu-dropdown > li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.my-menu-dropdown>li>a {
     color: #ffffff;
-    margin-top: 35px;
+    background: none;
+}
+
+.my-menu-dropdown>li>a:hover {
+    color: #1aa2d9;
+    background: none;
 }
 
 
 
 
-
+/*
 #logo {
     font-family: 'Fontdiner Swanky', cursive;
 	position: absolute;
@@ -54,36 +85,11 @@
     color: #ffe67b;
 }
 
-.navbar-nav > li {
-    margin: 0px 20px;
-}
 
-.navbar-nav > li > .dropdown-menu {
-    background-color: #444444;
-    font-size: 70%;
-    width: 100%;
-    border-top: solid 5px #1aa2d9;
-}
 
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    background: none;
-    color: #1aa2d9;
-}
 
-.navbar-nav > li > .dropdown-menu > li {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
 
-.dropdown-menu>li>a {
-    color: #ffffff;
-    background: none;
-}
 
-.dropdown-menu>li>a:hover {
-    color: #1aa2d9;
-    background: none;
-}
 */
 /* END OF OTHER PAGES HEADER */
 
@@ -95,10 +101,6 @@
     margin-bottom: 0px;
     background-size: cover;
     position: relative;
-    -webkit-transition: all 2000ms linear;
-    -moz-transition: all 2000ms linear;
-    -o-transition: all 2000ms linear;
-    -ms-transition: all 2000ms linear;
 }
 
 #jumbo-text {
@@ -112,6 +114,7 @@
 	opacity: 0.5;
     padding-top: 10px;
     padding-bottom: 10px;
+        /*font-family: 'Kaushan Script', cursive;*/
 }
 
 .read-more-button {
@@ -121,6 +124,7 @@
 
 #latest-destinations {
 	background-color: #eaebeb;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 #latest-destinations h1 {
@@ -132,6 +136,7 @@
 
 .my-destination-thumbnail {
     overflow: hidden;
+    padding: 0px;
 }
 
 .my-thumbnail-holder {
@@ -148,7 +153,6 @@
     -o-transition: all 2s linear; /* Opera */
     transition: all 2s linear;
     width: 100%;
-    animation-fill-mode: forwards;
 }
 
 .my-destination-thumbnail:hover img {
@@ -245,6 +249,64 @@
 }
 
 /* END OF FOOTER */
+
+/* DESTINATIONS PAGES */
+
+.my-main-container {
+    background-color: #e2cfb0;
+}
+
+.my-main-container .my-pages-jumbotron {
+    margin-top: 50px;
+    background: #eee url("../images/boat.jpg") no-repeat center center;
+    width: 100%;
+    border-radius: 0px;
+    background-size: cover;
+}
+
+#sidebar {
+    border: none;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+.my-list-group-item {
+    color: #000000;
+    border: none;
+    padding: 10px 30px;
+    position: relative;
+}
+
+.my-list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.my-list-group-item:last-child {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.my-list-group-item.active, .my-list-group-item.active:focus, .my-list-group-item.active:hover {
+    z-index: 2;
+    color: #1aa2d9;
+    background-color: #ffffff;
+    border: none;
+}
+
+.my-dest-count {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 16px;
+    font-size: 11px;
+    color: #1aa2d9;
+    border: solid 1px #1aa2d9;
+    width: 25px;
+    border-radius: 8px;
+    position: absolute;
+    right: 30px;
+}
 
 
 
