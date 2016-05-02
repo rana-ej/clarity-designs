@@ -311,7 +311,7 @@ body {
     transition: all 2s linear;
 }
 
-.my-tile-item:hover img, .my-tile-item:focus img, .my-tile-item:active img {
+.my-tile-item img:hover, .my-tile-item img:focus, .my-tile-item img:active img {
     -webkit-transform:scale(1.25); /* Safari and Chrome */
     -moz-transform:scale(1.25); /* Firefox */
     -ms-transform:scale(1.25); /* IE 9 */
