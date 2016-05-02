@@ -1,3 +1,6 @@
+body {
+    background-color: #eaebeb;
+}
 /* FRONT PAGE HEADER */
 .my-front-navbar {
 	background-color: #333333;
@@ -13,14 +16,14 @@
 /* OTHER PAGES HEADER */
 .my-pages-navbar {
     background-color: #333333;
-    height: 120px;
+    height: 80px;
     border: none;
     border-radius: 0px;
     margin-bottom: 0px;
 }
 
 .my-pages-navbar .container-fluid {
-    padding-top: 35px;
+    padding-top: 20px;
 }
 
 .my-pages-menu li {
@@ -92,6 +95,10 @@
 
 */
 /* END OF OTHER PAGES HEADER */
+
+/* TOP BANNER */
+/* END OF TOP BANNER */
+
 
 /* MAIN CONTENT */
 .my-front-jumbo {
@@ -201,7 +208,7 @@
 .social i {
     width: 40px;
     height: 40px;
-    color: #FFF;
+    color: #ffffff;
     background-color: #909AA0;
     font-size: 22px;
     text-align:center;
@@ -218,7 +225,7 @@
 }
 
 .social i:hover {
-    color: #FFF;
+    color: #ffffff;
     text-decoration: none;
     transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
@@ -250,25 +257,89 @@
 
 /* END OF FOOTER */
 
+
 /* DESTINATIONS PAGES */
 
-.my-main-container {
-    background-color: #e2cfb0;
-}
-
-.my-main-container .my-pages-jumbotron {
-    margin-top: 50px;
-    background: #eee url("../images/boat.jpg") no-repeat center center;
+.my-top-banner img {
     width: 100%;
-    border-radius: 0px;
-    background-size: cover;
+}
+.my-data-container {
+    margin-top: 50px;
 }
 
 #sidebar {
     border: none;
     padding-left: 30px;
-    margin-top: 50px;
 }
+
+/*TILES */
+
+.my-main-tiles-container {
+}
+
+.my-main-tiles-section h1 {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #1aa2d9;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+
+}
+
+.my-tile-item {
+    overflow: hidden;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.my-tile-image {
+    overflow: hidden;
+}
+
+.my-tile-image img {
+    width: 100%;
+    padding: inherit;
+    overflow: hidden;
+    -webkit-transition: all 2s linear; /* Safari and Chrome */
+    -moz-transition: all 2s linear; /* Firefox */
+    -ms-transition: all 2s linear; /* IE 9 */
+    -o-transition: all 2s linear; /* Opera */
+    transition: all 2s linear;
+}
+
+.my-tile-item:hover img, .my-tile-item:focus img, .my-tile-item:active img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+    width: 100%;
+}
+
+.my-tile-item:hover .my-tile-info, .my-tile-item:focus .my-tile-info, .my-tile-item:active .my-tile-info {
+    opacity: 1;
+}
+
+.my-tile-item .my-tile-info {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    left: 15px;
+    width: inherit;
+    height: 30px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    background-color: #1aa2d9;    
+    opacity: 0.8;
+}
+
+/* END OF TILES */
 
 .my-list-group-item {
     color: #000000;
