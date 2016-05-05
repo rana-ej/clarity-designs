@@ -342,6 +342,8 @@ body {
 
 /* END OF TILES */
 
+
+/* DESTINATIONS SIDE BAR */
 .my-list-group-item {
     color: #000000;
     border: none;
@@ -379,6 +381,68 @@ body {
     position: absolute;
     right: 30px;
 }
+/* END OF DESTINATIONS SIDE BAR */
+
+/* CONTACT FORM */
+.form-container {
+    margin: 30px 200px;
+}
+
+#contact-form h1{
+    display: block;
+    margin-bottom: 20px;
+    color: #1aa2d9;
+    text-transform: uppercase;
+}
+
+#contact-form .input {
+    display: inline-block;
+    border: none;
+    width: 47.8%;
+    margin-right: 2%;
+    margin-bottom: 9px;
+    box-sizing: border-box;
+}
+
+#contact-form .big {
+    width: 98%;
+}
+
+#contact-form .input input {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    line-height: 48px;
+    padding: 0 15px;
+    display: block;
+    outline-color: #000;
+    box-sizing: border-box;
+}
+
+#contact-form .input textarea {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    line-height: 100px;
+    padding: 0 15px;
+}
+
+#contact-form button {
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #1aa2d9;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0 35px;
+    line-height: 42px;
+}*/
+
+
+
+/* END OF CONTACT FORM */
 
 
 
