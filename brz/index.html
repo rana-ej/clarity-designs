@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fj">
+	<head>
+		<title>Subaru BRZ</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
+		<!-- Core CSS file -->
+		<link rel="stylesheet" href="dist/photoswipe.css"> 
+
+		<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+		     In the folder of skin CSS file there are also:
+		     - .png and .svg icons sprite, 
+		     - preloader.gif (for browsers that do not support CSS animations) -->
+		<link rel="stylesheet" href="dist/default-skin/default-skin.css"> 
+
+		<!-- Core JS file -->
+		<script src="dist/photoswipe.min.js"></script> 
+
+		<!-- UI JS file -->
+		<script src="dist/photoswipe-ui-default.min.js"></script> 
+		<script type="text/javascript" src="js/scripts.js"></script>
+
+	</head>
+	<body>
+		<header>
+			<div class="navigation">
+				<div class="brand">Subaru BRZ</div>
+				<ul class="language-menu">
+					<li><a href="index-en.html">EN</a></li>
+					<li><a href="index.html" class="selected-lang">FI</a></li>
+					<li><a href="index.html">SV</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="main-container">
+<!-- PhotoSwipeStuff -->
+<!-- 			<button id="btn">Open PhotoSwipe</button> -->
+			<!-- Root element of PhotoSwipe. Must have class pswp. -->
+			<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+			    <!-- Background of PhotoSwipe. 
+			         It's a separate element as animating opacity is faster than rgba(). -->
+			    <div class="pswp__bg"></div>
+
+			    <!-- Slides wrapper with overflow:hidden. -->
+			    <div class="pswp__scroll-wrap">
+
+			        <!-- Container that holds slides. 
+			            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+			            Don't modify these 3 pswp__item elements, data is added later on. -->
+			        <div class="pswp__container">
+			            <div class="pswp__item"></div>
+			            <div class="pswp__item"></div>
+			            <div class="pswp__item"></div>
+			        </div>
+
+			        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+			        <div class="pswp__ui pswp__ui--hidden">
+
+			            <div class="pswp__top-bar">
+
+			                <!--  Controls are self-explanatory. Order can be changed. -->
+
+			                <div class="pswp__counter"></div>
+
+			                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+			                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+			                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+			                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+			                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+			                <!-- element will get class pswp__preloader--active when preloader is running -->
+			                <div class="pswp__preloader">
+			                    <div class="pswp__preloader__icn">
+			                      <div class="pswp__preloader__cut">
+			                        <div class="pswp__preloader__donut"></div>
+			                      </div>
+			                    </div>
+			                </div>
+			            </div>
+
+			            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+			                <div class="pswp__share-tooltip"></div> 
+			            </div>
+
+			            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+			            </button>
+
+			            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+			            </button>
+
+			            <div class="pswp__caption">
+			                <div class="pswp__caption__center"></div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+<!-- PhotoSwipeStuff -->
+
+
+
+
+			<div class="row banner">
+      			<img src="images/000-cover.jpg" alt="Subaru BRZ" title="click to view gallery" onclick="openPhotoSwipe();">
+      		</div>
+      		<div class="gallery">
+<!--       			<div class="slide-button">
+      				<a href="#">
+      					<
+      				</a>
+      			</div> -->
+      			<div class="thumbnail">
+      				<a onclick="openPhotoSwipe();">
+      					<img src="images/002-front_right_1.jpg" alt="Subaru BRZ">
+      				</a>	
+      			</div>
+      			<div class="thumbnail">
+      				<a onclick="openPhotoSwipe();">
+      					<img src="images/002-front_right_2.jpg" alt="Subaru BRZ">
+      				</a>	
+      			</div>
+      			<div class="thumbnail">
+      				<a onclick="openPhotoSwipe();">
+      					<img src="images/008-rear_2.jpg" alt="Subaru BRZ">
+      				</a>	
+      			</div>
+      			<div class="thumbnail">
+      				<a onclick="openPhotoSwipe();">
+      					<img src="images/003-front_3_Not.jpg" alt="Subaru BRZ">
+      				</a>	
+      			</div>	
+      			<div class="thumbnail">
+      				<a onclick="openPhotoSwipe();">
+      					<img src="images/006-left.jpg" alt="Subaru BRZ">
+      				</a>	
+      			</div>
+<!--       			<div class="slide-button">
+      				<a href="#">
+      					>
+      				</a>
+      			</div>	 -->	
+      		</div>
+
+      		<div class="row section gray-background">
+      			<div class="section-header">
+      				<h1>HINTA</h1>
+      				<hr class="trans--grow">
+      			</div>
+      			<div class="section-content  price">
+      				<div class="section-text full-length-section">
+      					<p> 33,900 € </p><br/>
+      					<p>Rahoitus Mahdollista siirtää olemassaoleva laina Pohjolasta tai ottaa uuden lainan esim. <a href="https://www.s-pankki.fi/fi/lainat-ja-luotot/s-laina/">S-Pankista</a></p>
+      				</div>
+      			</div>
+      		</div>
+
+      		<div class="row section white-background">
+      			<div class="section-header">
+      				<h1>Description</h1>
+      				<hr class="trans--grow">
+      			</div>
+      			<div class="section-content description">
+      				<div class="section-text full-length-section">
+	      			<p>Pitäen mielessä BRZ:n edullisen hinnan, se on mielestäni paras urheiluauto tänä päivänä.</p>
+ 
+					<p>Ajoasento, ajotuntuma ja se ilon tunne minkä BRZ:n ajamisesta saa, on mittaamattoman arvokas.
+					Joka ikinen ajo tällä autolla, kaupunkiajelu tai mökille ajo, on niin hauska että olet iloisella mielellä loppupäivän.</p>
+ 
+					<p>Parhaimmillaan tämä auto on kuitenkin pienillä mutkikkailla teillä, missä muut ajavat reippaasti nopeusrajoitusten alle.<br/>
+					Siinä kun BRZ:a painaa nopeusrajoitusten mukaan mukisematta tai jopa vähän yli ;), on niitä hetkiä joita ei ikinä edes saavuteta monilla muilla autoilla, ja saman tunnelman saamiseen muissa urheiluautoissa voi maksaa jopa tuplasti enemmän.</p>
+ 
+					<p>Ja hintaan nähden tämä auto on upea, se saa ihmisten päät kääntymään ja pitkillä katseilla seuraamaan kun ajaa kaduilla.<br/>
+					Ihmiset myös haluavat ottaa tästä autosta kuvia, se jos jotain on merkki kunnoituksesta minkä tämä auto on ansainnut.</p>
+ 
+					<p>Tämän takia BRZ:aa kannattaa hankkia ja siitä nauttia.
+					Nyt annan sinulle saman mahdollisuuden minkä minulla on ollut, muuttuneen elämäntilanteeni takia.</p>
+					</div>
+      			</div>
+      		</div>
+      		<div class="row section features gray-background">
+      			<div class="section-header">
+      				<h1>PERUS TIEDOT</h1>
+      				<hr>
+  				</div>
+  				<div class="section-content">
+  					<div class="section-text half-length-section">
+  						<table class="basic-table">
+						<tr><td>Vuosimalli</td><td>2015 (ensirek. 12-2014)</td></tr>
+						<tr><td>Katsastettu</td><td>Uusi auto</td></tr>
+						<tr><td>Rek.nro</td><td>YIV-461</td></tr>
+						<tr><td>Mittarilukema</td><td>20 000 km</td></tr>
+						<tr><td>Moottori</td><td>2.0 l, Bensiini</td></tr>
+						<tr><td>Vetotapa</td><td>Takaveto</td></tr>
+						<tr><td>Vaihteisto</td><td>Automaatti</td></tr>
+						<tr><td>Sijainti</td><td>Uusimaa</td></tr>
+						<tr><td>Omistajia</td><td>1</td></tr>
+						<tr><td>Huoltokirja</td><td>Täydellinen merkkiliikkeen huoltokirja</td></tr>
+						<tr><td>Takuu</td><td>Tehdastakuu voimassa</td></tr>
+						</table>
+					</div>
+  					<div class="section-image half-length-section">
+	      				<img src="images/002-front_right_1.jpg">
+	      			</div>
+	      		</div>
+      		</div>
+      		<div class="row section interior white-background">
+	  			<div class="section-header">
+	  				<h1>POWER</h1>
+	  				<hr>
+	  			</div>	
+      			<div class="section-text full-length-section">
+      				<div class="feature-list-container">
+						 <table class="styled-table">
+							<tr><th colspan="2">MOOTTORI</th></tr>
+							<tr><td>Tyyppi</td><td>Boxermoottori, 4-sylinterinen, nestejäähdytys, bensiini DOHC 16 venttiiliä</td></tr>
+							<tr><td>Sylinterin halkaisija x iskuntilavuus (mm)</td><td>86,0 x 86,0</td></tr>
+							<tr><td>Tilavuus (cm3)</td><td>1998</td></tr>
+							<tr><td>Puristussuhde</td><td>12,5</td></tr>
+							<tr><td>Polttoainejärjestelmä</td><td>Suorasuihkutus</td></tr>
+							<tr><td>Polttoainesäiliö (litraa)</td><td>50</td></tr>
+						</table>
+      				</div>
+      				<div class="feature-list-container">
+						<table class="styled-table">
+							<tr><th colspan="2">TEHO</th></tr>
+							<tr><td>Maksimiteho (hv(kW)/ r/min)</td><td>200 (147) / 7.000</td></tr>
+							<tr><td>Maksimivääntö (Nm/ r/min)</td><td>205 (20,9) /6400-6600</td></tr>
+							<tr><td>Huippunopeus suurimmalla vaihteella (km/h)</td><td>210</td></tr>
+							<tr><td>Kiihtyvyys 0-100 km/h (sek)</td><td>8,2</td></tr>
+							<tr><td>Polttoaineenkulutus liter/100km</td><td></td></tr>
+							<tr><td>Kaupunki</td><td>9,6</td></tr>
+							<tr><td>Maantie</td><td>5,7</td></tr>
+							<tr><td>Yhdistetty</td><td>7,1</td></tr>
+							<tr><td>CO2-päästöt g/km</td><td></td></tr>
+							<tr><td>Kaupunki</td><td>223</td></tr>
+							<tr><td>Maantie</td><td>131</td></tr>
+							<tr><td>Yhdistetty</td><td>164</td></tr>
+							<tr><td>Ympäristöluokitus</td><td>Euro 6b</td></tr>
+						</table>
+      				</div>
+      				<div class="feature-list-container">
+						<table class="styled-table">
+							<tr><th colspan="2">VAIHTEISTO</th><th></th></tr>
+							<tr><td>Voimanjako</td><td>takaveto</td></tr>
+							<tr><td>Välityssuhteet</td><td></td></tr>
+							<tr><td>1. vaihde</td><td>3,538</td></tr>
+							<tr><td>2. vaihde</td><td>2,060</td></tr>
+							<tr><td>3. vaihde</td><td>1,404</td></tr>
+							<tr><td>4. vaihde</td><td>1,000</td></tr>
+							<tr><td>5. vaihde</td><td>0,713</td></tr>
+							<tr><td>6:. vaihde</td><td>0,582</td></tr>
+							<tr><td>Peruutusvaihde</td><td>3,168</td></tr>
+							<tr><td>Perävälitys</td><td>4,100</td></tr>
+						</table>
+      				</div>
+      			</div>
+      		</div>
+      		<div class="row section interior gray-background">
+      			<div class="section-header">
+      				<h1>Interior</h1>
+      				<hr>
+      			</div>
+      			<div class="section-text full-length-section">
+      				<div class="feature-list-container">
+      					<ul class="feature-list">
+      						<li>ISTUIMET</li>
+      						<li>Nahkaverhoiltu ohjauspyörä ja vaihdekepin nuppi</li>
+      						<li>Nahka/Alcantara®-istuimet</li>
+      						<li>Sport-istuimet edessä</li>
+      						<li>Manuaalisesti säädettävä kuljettajan istuin, 6 asentoa</li>
+      						<li>Etuistuinten lämmitys</li>
+      						<li>Ovien kynnyssuoja</li>
+      						<li>Etumatkustajan istuin siirrettävissä takaistuimelle mentäessä</li>
+      						<li>Säilytystaskut etuistuinten selkänojan takana</li>
+      						<li>Alas taitettava takaistuimen selkänoja</li>	
+      					</ul>
+      				</div>
+      				<div class="feature-list-container">
+      					<ul class="feature-list">
+      						<li>MUKAVUUS</li>
+      						<li>Sähköiset ikkunannostimet (automaattinen ylös/alas-toiminto väliinjäämissuojauksella.)</li>
+      						<li>Kauko-ohjattava keskuslukitus</li>
+      						<li>Avaimeton sisäänmeno ja käynnistyspainike</li>
+      						<li>Karttavalot edessä</li>
+      						<li>Tavaratilan valaistus</li>
+      						<li>Meikkipeilit</li>
+      						<li>Keskikonsoli</li>
+      						<li>2 mukitelinettä keskikonsolissa</li>
+      						<li>Ovien säilytyslokerot juomatelineillä</li>	
+      						<li>Tavaratilan avaus sisältä</li>
+      						<li>Polttoainesäiliön avaus sisäpuolelta</li>
+      						<li>12 V sähköpistorasia keskikonsolissa ja hansikaslokerossa</li>
+      						<li>Säilytyslokero tavaratilan pohjalla</li>
+      						<li>Renkaankorjaussarja</li>
+      					</ul>
+      				</div>
+      				<div class="feature-list-container">
+      					<ul class="feature-list">
+      						<li>ILMASTOINTI</li>
+      						<li>2-alueinen ilmastointi</li>
+      						<li>Lämmitettävät ulkopeilit</li>
+      						<li>Etu- ja sivuhuurteenpoisto</li>
+      						<li>Tuulilasinpyyhkimet tihkutoiminnolla</li>
+      						<li>Takalasin lämmitys ajastimella</li>
+      					</ul>
+      				</div>
+      			</div>
+      		</div>
+      		<div class="row section exterior gray-background">
+      			<div class="section-header">
+      				<h1>Exterior</h1>
+      				<hr>
+      			</div>
+      			<div class="section-text full-length-section">
+      				<div class="feature-list-container">
+      					<ul class="feature-list">
+      						<li>ULKOPUOLI</li>
+      						<li>Automaattiset ajovalot</li>
+      						<li>Xenon-ajovalot</li>
+      						<li>Ajovalojen pesimet</li>
+      						<li>Etusumuvalo</li>
+      						<li>Takasumuvalo</li>
+      						<li>Sähköisesti taittuvat sivupeilit</li>
+      						<li>UV-suojatut lasit</li> 
+      						<li>17 tuuman alumiinivanteet</li>
+      						<li>Pohjapanssari</li>
+      						<li>Sivukoristelistat</li>
+      						<li>Takaspoileri</li>  
+      						<li>Takadiffuusori</li>    
+      						<li>Hain evä -antenni</li>	
+      						<li>Krominen kaksoispakoputki</li>					
+  						</ul>
+					</div>
+					<div class="feature-list-container">
+						<table>
+							<tr><th>MITAT JA PAINO size</th><th></th></tr>
+							<tr><td>Pituus (mm)</td><td>4240</td></tr>
+							<tr><td>Leveys (mm)</td><td>1775</td></tr>
+							<tr><td>Korkeus (mm)</td><td>1320</td></tr>
+							<tr><td>Akseliväli (mm)</td><td>2570</td></tr>
+							<tr><td>Raideleveys	Edessä (mm)</td><td>1520</td></tr>
+							<tr><td>Takana (mm)</td><td>1540</td></tr>
+							<tr><td>Maavara (mm)</td><td>130</td></tr>
+							<tr><td>Tavaratila (lit.)</td><td>243</td></tr>
+							<tr><td>Istumapaikat(persons)</td><td>4</td></tr>
+							<tr><td>Oma paino (kg)</td><td>1339</td></tr>
+							<tr><td>Kokonaispaino (kg)</td><td>1700</td></tr>
+						</table>
+      				</div>
+      				<div class="feature-list-container">
+      					<table>
+							<tr><th>KORI chasi</th><th></th></tr>
+							<tr><td>Ohjaus</td><td>Sähkötehosteinen hammastanko</td></tr>
+							<tr><td>Jousitus</td><td>Edessä: MacPherson -joustintuet, takana: Monivarsituenta</td></tr>
+							<tr><td>Kääntöympyrä (m)</td><td>10,8</td></tr>
+							<tr><td>Jarrut</td><td>Edessä ja takana: jäähdytetyt levyjarrut</td></tr>
+							<tr><td>Renkaat / rengaskoko</td><td>215/45R17</td></tr>
+						</table>
+					</div>
+				</div>
+      		</div>
+  			<div class="row section interior white-background">
+	  			<div class="section-header">
+	  				<h1>Interior</h1>
+	  				<hr>
+	  			</div>	
+      			<div class="section-text full-length-section">
+      				<div class="feature-list-container">
+						 <table>
+							<tr><th>MOOTTORI</th><th></th></tr>
+							<tr><td>Tyyppi</td><td>Boxermoottori, 4-sylinterinen, nestejäähdytys, bensiini DOHC 16 venttiiliä</td></tr>
+							<tr><td>Sylinterin halkaisija x iskuntilavuus (mm)</td><td>86,0 x 86,0</td></tr>
+							<tr><td>Tilavuus (cm3)</td><td>1998</td></tr>
+							<tr><td>Puristussuhde</td><td>12,5</td></tr>
+							<tr><td>Polttoainejärjestelmä</td><td>Suorasuihkutus</td></tr>
+							<tr><td>Polttoainesäiliö (litraa)</td><td>50</td></tr>
+						</table>
+      				</div>
+      				<div class="feature-list-container">
+						<table>
+							<tr><th>TEHO</th><th></th></tr>
+							<tr><td>Maksimiteho (hv(kW)/ r/min)</td><td>200 (147) / 7.000</td></tr>
+							<tr><td>Maksimivääntö (Nm/ r/min)</td><td>205 (20,9) /6400-6600</td></tr>
+							<tr><td>Huippunopeus suurimmalla vaihteella (km/h)</td><td>210</td></tr>
+							<tr><td>Kiihtyvyys 0-100 km/h (sek)</td><td>8,2</td></tr>
+							<tr><td>Polttoaineenkulutus liter/100km</td><td></td></tr>
+							<tr><td>Kaupunki</td><td>9,6</td></tr>
+							<tr><td>Maantie</td><td>5,7</td></tr>
+							<tr><td>Yhdistetty</td><td>7,1</td></tr>
+							<tr><td>CO2-päästöt g/km</td><td></td></tr>
+							<tr><td>Kaupunki</td><td>223</td></tr>
+							<tr><td>Maantie</td><td>131</td></tr>
+							<tr><td>Yhdistetty</td><td>164</td></tr>
+							<tr><td>Ympäristöluokitus</td><td>Euro 6b</td></tr>
+						</table>
+      				</div>
+      				<div class="feature-list-container">
+						<table>
+							<tr><th>VAIHTEISTO</th><th></th></tr>
+							<tr><td>Voimanjako</td><td>takaveto</td></tr>
+							<tr><td>Välityssuhteet</td><td></td></tr>
+							<tr><td>1. vaihde</td><td>3,538</td></tr>
+							<tr><td>2. vaihde</td><td>2,060</td></tr>
+							<tr><td>3. vaihde</td><td>1,404</td></tr>
+							<tr><td>4. vaihde</td><td>1,000</td></tr>
+							<tr><td>5. vaihde</td><td>0,713</td></tr>
+							<tr><td>6:. vaihde</td><td>0,582</td></tr>
+							<tr><td>Peruutusvaihde</td><td>3,168</td></tr>
+							<tr><td>Perävälitys</td><td>4,100</td></tr>
+						</table>
+      				</div>
+      			</div>
+      		</div>
+		</div>
+	</body>
+</html>
