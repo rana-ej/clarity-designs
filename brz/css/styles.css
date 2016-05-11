@@ -209,6 +209,7 @@ a {
 /*	border-collapse: collapse;*/
 	width: 100%;
 	color: #171d26;
+	box-sizing: border-box;
 }
 
 .basic-table th {
