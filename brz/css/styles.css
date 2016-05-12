@@ -431,6 +431,14 @@ a {
 		line-height: 20px;
 	}
 
+	.basic-table, .styled-table {
+		margin-bottom: 10px;
+	}
+
+	.section-header hr {
+		width: 90%;
+	}
+
 }
 
 /* SMALL */
@@ -476,6 +484,9 @@ a {
 		margin-bottom: 10px;
 	}
 
+	.section-header hr {
+		width: 90%;
+	}
 }
 
 
@@ -542,6 +553,10 @@ a {
 		padding: 20px 10px;
 
 	}
+
+	.section-header hr {
+		width: 90%;
+}
 }
 /*EXTRA EXTRA SMALL */
 @media (max-width: 479px) {
