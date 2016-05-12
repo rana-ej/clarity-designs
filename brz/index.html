@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fj">
 	<head>
 		<title>Subaru BRZ</title>
@@ -131,33 +131,29 @@
       			<img src="images/large/000-cover.jpg" alt="Subaru BRZ" title="click to view gallery" onclick="openPhotoSwipe();">
       		</div>
       		<div class="gallery">
-<!--       			<div class="slide-button">
-      				<a href="#">
-      					<
-      				</a>
-      			</div> -->
-      			<div class="thumbnail">
-      				<img src="images/medium/002-front_right_1.jpg" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">	
+       			<div class="slide-button">
+					<button onClick="ImageCarouselSlideLeft();" class="material-icons brzblue" style="font-size:400%"><</button>
+      			<!-- <i class="material-icons md-36 brzblue">navigate_before</i> -->
       			</div>
       			<div class="thumbnail">
-      				<img src="images/medium/002-front_right_2.jpg" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">	
+					<img id="image_thumbnail_1" src="" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">
       			</div>
       			<div class="thumbnail">
-      				<img src="images/medium/008-rear_2.jpg" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">	
+					<img id="image_thumbnail_2" src="" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">
       			</div>
       			<div class="thumbnail">
-      				<img src="images/medium/003-front_3_Not.jpg" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">	
+					<img id="image_thumbnail_3" src="" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">
+      			</div>
+      			<div class="thumbnail">
+					<img id="image_thumbnail_4" src="" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">
       			</div>	
       			<div class="thumbnail">
-      				<img src="images/medium/006-left.jpg" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">	
+					<img id="image_thumbnail_5" src="" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">
       			</div>
-<!--       			<div class="slide-button">
-      				<a href="#">
-      					>
-      				</a>
-      			</div>	 -->	
+       			<div class="slide-button">
+					<button onClick="ImageCarouselSlideRight();"><i class="material-icons md-36 brzblue">navigate_next</i></button>
+      			</div>
       		</div>
-
       		<div class="row section gray-background">
       			<div class="section-header">
       				<h1>HINTA</h1>
