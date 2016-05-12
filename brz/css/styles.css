@@ -7,6 +7,7 @@ body {
 	line-height: 1.5;
 	display: inline-block;
 	text-shadow: none;
+	width: 100%;
 }
 
 a {
@@ -28,13 +29,17 @@ a {
 	font-size: 250%;
 	text-transform: uppercase;
 	text-shadow: 2px 2px 2px #1f87ff;
+	width: 50%;
 }
 
 .navigation .details {
-	display: -webkit-flex;
-	display: flex;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+    display: flex;
+    flex-direction: row-reverse;
     align-items: center;
-    margin-left: 50px;
+/*    margin-right: 30px;*/
+    width: 50%;
 }
 
 .contact {
@@ -44,10 +49,6 @@ a {
 	padding: 0;
 }
 
-.contact-div {
-/*	position: absolute;
-    right: 40px;*/
-}
 .contact li {
 	font-size: 150%;
 	display: flex;
@@ -390,6 +391,11 @@ a {
 	.center-align {
 	margin: 0 3.5%;
 	}
+
+	.navigation .details {
+    	margin-right: 2%;
+    	width: 48%;
+    }
 }
 
 /* MEDIUM */
@@ -404,6 +410,11 @@ a {
 
 	.col-m-8 {
 		width: 100%;
+	}
+
+	.navigation .brand {
+		font-size: 200%;
+		line-height: 20px;
 	}
 
 }
@@ -422,6 +433,32 @@ a {
 		width: 100%;
 	}
 
+	.navigation {
+		display: block;
+	}
+
+	.navigation .brand {
+		font-size: 250%;
+		line-height: 20px;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.navigation .details {
+	    width: 100%;
+	}
+
+	.contact-div{
+	    width: 50%;
+	    margin-left: 30%;
+	}
+
+	.language-div {
+		width: 50%;
+
+	}
+
 }
 
 
@@ -438,8 +475,42 @@ a {
 	.col-m-8 {
 		width: 100%;
 	}
+	
+	.navigation {
+		display: block;
+	}
+
+	.navigation .brand {
+		font-size: 200%;
+		line-height: 20px;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.navigation .details {
+	    width: 100%;
+	}
+
+	.contact-div{
+	    width: 60%;
+	    margin-left: 10%;
+	}
+
+	.contact li {
+		font-size: 120%;
+	}
+
+	.language-div {
+		width: 40%;
+
+	}
+
+	.language-menu li {
+		font-size: 100%;
+	}
 }
-/* EXTRA EXTRA SMALL */
+/*EXTRA SMALL */
 @media (max-width: 479px) {
 	.col-sm-6 {
 		width: 100%;
@@ -451,5 +522,27 @@ a {
 
 	.col-m-8 {
 		width: 100%;
+	}
+
+	.navigation .brand {
+		font-size: 150%;
+		text-align: center;
+	}
+
+	.contact {
+		width: 100%;
+		display: block;
+	}
+
+	.contact li {
+		font-size: 100%;
+	}
+
+	.language-menu {
+		display: flex;
+		width: 100%;
+	}
+	.language-menu li {
+		font-size: 100%;
 	}
 }
