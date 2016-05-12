@@ -470,7 +470,10 @@ a {
 
 	.language-div {
 		width: 50%;
+	}
 
+	.basic-table, .styled-table {
+		margin-bottom: 10px;
 	}
 
 }
@@ -522,6 +525,22 @@ a {
 
 	.language-menu li {
 		font-size: 100%;
+	}
+
+	.basic-table, .styled-table {
+		table-layout:fixed;
+		margin-bottom: 10px;
+	}
+
+	.basic-table td, .styled-table td {
+		font-size: 80%;
+		padding: 2px 5px;
+		word-wrap:break-word;
+	}
+
+	.section {
+		padding: 20px 10px;
+
 	}
 }
 /*EXTRA EXTRA SMALL */
@@ -578,13 +597,15 @@ a {
 	}
 
 	.basic-table td, .styled-table td {
-	font-size: 80%;
-	padding: 2px 5px;
-	word-wrap:break-word;
+		font-size: 80%;
+		padding: 2px 5px;
+		word-wrap:break-word;
 	}
 
 	.section {
 		padding: 20px 10px;
-
 	}
+
+	.section-header hr {
+		width: 90%;
 }
