@@ -348,7 +348,28 @@ a {
 }
 /* END OF LISTS */
 
+.reviews .section-text p {
+	text-align: center;
+	font-style: italic;
+}
+
+.reviews .section-text p  a {
+	font-style: normal;
+	color: #1f87ff;
+}
+
+
 /* END OF SECTIONS */
+
+/* FOOTER */
+.footer {
+	height: 20px;
+	background-color: #222;
+	padding: 30px 40px;
+	text-align: center;
+	font-size: 90%;
+}
+/* END OF FOOTER */
 
 .right-align {
 	float: right;
