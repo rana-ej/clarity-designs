@@ -57,8 +57,7 @@ var imageList = new cImageList
 		new cImage.CreateNewInstanceBySourceWidthAndHeight('014-inside_backseat.jpg', 	3072, 4608),
 		new cImage.CreateNewInstanceBySourceWidthAndHeight('015-inside_front_3_1.jpg', 	2441, 4247),
 		new cImage.CreateNewInstanceBySourceWidthAndHeight('015-inside_front_5.jpg', 	4608, 3072),
-		new cImage.CreateNewInstanceBySourceWidthAndHeight('015-inside_front_6.jpg', 	4608, 3072),
-		new cImage.CreateNewInstanceBySourceWidthAndHeight('015-inside_front_7.jpg', 	3072, 4608)
+		new cImage.CreateNewInstanceBySourceWidthAndHeight('015-inside_front_6.jpg', 	4608, 3072)
 	)
 );
 
