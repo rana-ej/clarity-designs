@@ -25,20 +25,29 @@ a {
 }
 .navigation .brand {
 	display: inline-block;
-	width: 70%;
 	font-size: 250%;
 	text-transform: uppercase;
-	text-shadow: 1px 1px 1px #1f87ff;
+	text-shadow: 2px 2px 2px #1f87ff;
+}
+
+.navigation .details {
+	display: -webkit-flex;
+	display: flex;
+    align-items: center;
+    margin-left: 50px;
 }
 
 .contact {
 	display: inline-block;
 	margin-left: 35px;
 	list-style: none;
-	width: 18%;
 	padding: 0;
 }
 
+.contact-div {
+/*	position: absolute;
+    right: 40px;*/
+}
 .contact li {
 	font-size: 150%;
 	display: flex;
@@ -46,21 +55,20 @@ a {
 }
 
 .contact i {
- margin-right: 15px;
+ margin-right: 20px;
 }
 
 .material-icons.brzblue { 
 	color: #1f87ff; 
 }
 
-.navigation .language-menu {
+.language-menu {
 	display: inline-block;
 	list-style: none;
-	text-align: right;
-	float: right;
+	padding: 0;
 }
 
-.navigation .language-menu li {
+.language-menu li {
 	display: inline-block;
 	padding-right: 10px;
 	font-size: 120%;
@@ -181,7 +189,6 @@ a {
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
-    /*font-family: "Raleway",sans-serif;*/
     font-family: 'Sanchez',serif;
     margin-bottom: 10px;
 }
@@ -190,7 +197,6 @@ a {
 	width: 70%;
 	display: inline-block;
 	vertical-align: top;
-	/*padding-right: 30px;*/
 	box-sizing: border-box;
 	text-align: justify;
 }
@@ -246,17 +252,14 @@ a {
 .basic-table tr {
 	border-color:inherit;
 	background-color:#fcfcfc;
-/*		background-color:#a9cfff;*/
 }
 
 .basic-table tr:nth-child(odd) {
 	border-color:inherit;
 	background-color:#f7f7f7;
-/*	background-color:#a0ccff;*/
 }
 
 .basic-table td {
-	/*background-color: #1f87ff;*/
 	padding: 8px 20px;
 }
 
@@ -266,9 +269,9 @@ a {
 }
 
 .styled-table {
-	border-collapse: collapse;
+	/*border-collapse: collapse;*/
 	width: 100%;
-	border: 1px solid gray;
+/*	border: 1px solid #525669;*/
 }
 
 .styled-table th {
@@ -379,7 +382,7 @@ a {
 	float: left;
 
 }
-
+/* LARGE */
 @media (min-width: 1200px) { 
 	.col-sm-6 {
 		width: 48%;
