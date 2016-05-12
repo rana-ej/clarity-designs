@@ -120,7 +120,45 @@ function openPhotoSwipeWithCurrentImageSource(FullImageSource)
 	openPhotoSwipe(ImageSource);
 }
 
+var _ImageCarouselPosition = 0;
+function InitializeImageCarousel()
+{
+	for(var ii = 0; ii < 5; ii++)
+	{
+		var curPosition = _ImageCarouselPosition + ii;
+		if(curPosition >= imageList._ImageList.length)
+		{
+			curPosition -= imageList._ImageList.length;
+		}
+		
+		var imageThumbnailId = "image_thumbnail_" + (ii+1);
+		var curImage = document.getElementById(imageThumbnailId);
+		curImage.src = "images/thumbnails/" + imageList._ImageList[curPosition]._Source;
+	}
+}
+
+function ImageCarouselSlideLeft()
+{
+	_ImageCarouselPosition -= 5;
+	if(_ImageCarouselPosition < 0)
+	{
+		_ImageCarouselPosition += imageList._ImageList.length;
+	}
+	InitializeImageCarousel();
+}
+
+function ImageCarouselSlideRight()
+{
+	_ImageCarouselPosition += 5;
+	if(_ImageCarouselPosition >= imageList._ImageList.length)
+	{
+		_ImageCarouselPosition -= imageList._ImageList.length;
+	}
+	InitializeImageCarousel();
+}
+
 function InitializeScripts()
 {
 	InitalizePhotoGalleryItems();
+	InitializeImageCarousel();
 }
