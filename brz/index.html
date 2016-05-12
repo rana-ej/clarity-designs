@@ -27,7 +27,7 @@
 		<script type="text/javascript" src="js/scripts.js"></script>
 
 	</head>
-	<body>
+	<body onLoad="InitializeScripts();">
 		<header>
 			<div class="navigation">
 				<div class="brand col-sm-6 left-align">Subaru BRZ Sport 6AT</div>
@@ -127,7 +127,7 @@
 
 
 			<div class="row banner">
-      			<img src="images/000-cover.jpg" alt="Subaru BRZ" title="click to view gallery" onclick="openPhotoSwipe();">
+      			<img src="images/large/000-cover.jpg" alt="Subaru BRZ" title="click to view gallery" onclick="openPhotoSwipe();">
       		</div>
       		<div class="gallery">
 <!--       			<div class="slide-button">
@@ -136,29 +136,19 @@
       				</a>
       			</div> -->
       			<div class="thumbnail">
-      				<a onclick="openPhotoSwipe();">
-      					<img src="images/002-front_right_1.jpg" alt="Subaru BRZ">
-      				</a>	
+      				<img src="images/medium/002-front_right_1.jpg" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">	
       			</div>
       			<div class="thumbnail">
-      				<a onclick="openPhotoSwipe();">
-      					<img src="images/002-front_right_2.jpg" alt="Subaru BRZ">
-      				</a>	
+      				<img src="images/medium/002-front_right_2.jpg" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">	
       			</div>
       			<div class="thumbnail">
-      				<a onclick="openPhotoSwipe();">
-      					<img src="images/008-rear_2.jpg" alt="Subaru BRZ">
-      				</a>	
+      				<img src="images/medium/008-rear_2.jpg" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">	
       			</div>
       			<div class="thumbnail">
-      				<a onclick="openPhotoSwipe();">
-      					<img src="images/003-front_3_Not.jpg" alt="Subaru BRZ">
-      				</a>	
+      				<img src="images/medium/003-front_3_Not.jpg" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">	
       			</div>	
       			<div class="thumbnail">
-      				<a onclick="openPhotoSwipe();">
-      					<img src="images/006-left.jpg" alt="Subaru BRZ">
-      				</a>	
+      				<img src="images/medium/006-left.jpg" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">	
       			</div>
 <!--       			<div class="slide-button">
       				<a href="#">
@@ -224,7 +214,7 @@
 						</table>
 					</div>
   					<div class="section-image col-sm-6 right-align">
-	      				<img src="images/002-front_right_1.jpg">
+	      				<img src="images/medium/002-front_right_1.jpg">
 	      			</div>
 	      		</div>
       		</div>
@@ -289,7 +279,7 @@
   				</div>
   				<div class="section-content">
   				  	<div class="section-image col-sm-6 left-align">
-	      				<img src="images/005-front_left_6.jpg">
+	      				<img src="images/medium/005-front_left_6.jpg">
 	      			</div>
   					<div class="section-text col-sm-6 right-align">
   						<table class="basic-table">
@@ -365,7 +355,7 @@
 						</table>
 					</div>
   					<div class="section-image col-sm-6 right-align">
-	      				<img src="images/013-inside_front.jpg">
+	      				<img src="images/medium/013-inside_front.jpg">
 	      			</div>
 	      		</div>
       		</div>
@@ -451,7 +441,7 @@
 						</table>
 					</div>
   					<div class="section-image col-sm-6 left-align">
-	      				<img src="images/015-inside_front_4.jpg">
+	      				<img src="images/medium/015-inside_front_4.jpg">
 	      			</div>
 	      		</div>
       		</div>
