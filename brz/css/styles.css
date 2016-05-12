@@ -252,12 +252,14 @@ a {
 	color: #171d26;
 	box-sizing: border-box;
 	table-layout:fixed;
+	border-spacing: 0;
 }
 
 .basic-table th {
 	border-color:inherit;
 	text-align:left;
 	padding: 10px;
+	border-bottom: 2px solid gray;
 }
 
 .basic-table tr {
@@ -272,12 +274,12 @@ a {
 
 .basic-table td {
 	padding: 8px 20px;
+	border-bottom: 2px solid gray;
 }
 
-.basic-table td:first-child {
-	border-color:inherit;
-	border-left:none
-}
+/*.basic-table td:nth-child(odd) {
+	border-right: 2px solid gray;
+}*/
 
 .styled-table {
 	width: 100%;
