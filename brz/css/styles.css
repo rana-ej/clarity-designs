@@ -245,6 +245,7 @@ a {
 	width: 100%;
 	color: #171d26;
 	box-sizing: border-box;
+	table-layout:fixed;
 }
 
 .basic-table th {
@@ -273,9 +274,7 @@ a {
 }
 
 .styled-table {
-	/*border-collapse: collapse;*/
 	width: 100%;
-/*	border: 1px solid #525669;*/
 }
 
 .styled-table th {
@@ -536,25 +535,53 @@ a {
 		width: 100%;
 	}
 
-	.navigation .brand {
-		font-size: 150%;
-		text-align: center;
-	}
-
-	.contact {
-		width: 100%;
+	.navigation {
 		display: block;
 	}
 
+	.navigation .brand {
+		font-size: 180%;
+		line-height: 100%;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.navigation .details {
+	    width: 100%;
+	}
+
+	.contact-div{
+	    width: 100%;
+	    margin-left: 0;
+	}
+
 	.contact li {
+		font-size: 120%;
+	}
+
+	.language-div {
+		width: 100%;
+
+	}
+
+	.language-menu li {
 		font-size: 100%;
 	}
 
-	.language-menu {
-		display: flex;
-		width: 100%;
+	.basic-table, .styled-table {
+		table-layout:fixed;
+		margin-bottom: 10px;
 	}
-	.language-menu li {
-		font-size: 100%;
+
+	.basic-table td, .styled-table td {
+	font-size: 80%;
+	padding: 2px 5px;
+	word-wrap:break-word;
+	}
+
+	.section {
+		padding: 20px 10px;
+
 	}
 }
