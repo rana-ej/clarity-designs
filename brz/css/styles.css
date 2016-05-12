@@ -185,10 +185,11 @@ a {
     transition: all 0s  linear;
 }
 
-.section:hover hr, .section:focus hr, .section:active hr {
+.section:hover hr, .section:active hr, .section:focus hr {
 	width: 100%;
 	-webkit-transition: all 2s linear; /* For Safari 3.1 to 6.0 */
     transition: all 2s  linear;
+    -webkit-transition: all 2s  linear;
 
 }
 
