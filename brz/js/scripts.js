@@ -163,3 +163,12 @@ function InitializeScripts()
 	InitalizePhotoGalleryItems();
 	InitializeImageCarousel();
 }
+
+$(document).ready(function() {
+    
+    var dynamic = $('.section-text');
+    var static = $('.section-image');
+    
+    static.height(dynamic.height());
+
+});

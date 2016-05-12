@@ -215,22 +215,14 @@ a {
 }
 
 .section-image {
-	display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden;
-    height: inherit;
-/*	width: 29%;
-	display: inline-block;*/
+	width: 29%;
+	display: inline-block;
 }
 
 .section-image img {
-	flex-shrink:0;
-    min-width:100%;
-    min-height:100%;
-/*	width: 100%;
+	width: 100%;
 	display: inline-block;
-	cursor: pointer; cursor: hand;*/
+	cursor: pointer; cursor: hand;
 }
 
 .full-length-section {
