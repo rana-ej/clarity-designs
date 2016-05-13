@@ -320,7 +320,7 @@ a {
 
 .styled-table td:nth-child(2) {
 	border-color:inherit;
-	text-align: right;
+	text-align: left;
 }
 
 
