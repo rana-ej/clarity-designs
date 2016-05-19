@@ -64,13 +64,25 @@ var imageList = new cImageList
 var items = new Array();
 function InitalizePhotoGalleryItems()
 {
+	var width = window.innerWidth;
+	var height = window.innerHeight;
+	var hd = false;
+	if(width > 1600 && height > 1000)
+	{
+		hd = true;
+	}
 	for (var ii = 0; ii < imageList._ImageList.length; ii++) 
 	{
 		var curImage = imageList._ImageList[ii];
 		items.push(
 			new function() 
 			{
-				this.src = "images/large/" + curImage._Source;
+				this.src = "images/"
+				if(hd == true)
+					this.src += "large/";
+				else
+					this.src += "medium/";
+				this.src += curImage._Source;
 				this.w = curImage._Width;
 				this.h = curImage._Height;
 				this.pid = curImage._Source;
