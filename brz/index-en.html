@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="fj">
 	<head>
 		<title>Subaru BRZ</title>
 		<meta charset="utf-8">
@@ -8,6 +8,8 @@
 		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 		<!-- Core CSS file -->
 		<link rel="stylesheet" href="dist/photoswipe.css"> 
 
@@ -25,15 +27,32 @@
 		<script type="text/javascript" src="js/scripts.js"></script>
 
 	</head>
-	<body>
+	<body onLoad="InitializeScripts();">
 		<header>
 			<div class="navigation">
-				<div class="brand">Subaru BRZ</div>
-				<ul class="language-menu">
-					<li><a href="index.html">EN</a></li>
-					<li><a href="index.html">FI</a></li>
-					<li><a href="index.html">SV</a></li>
-				</ul>
+				<div class="brand  left-align">Subaru BRZ Sport 6AT</div>
+				<div class="details right-align">
+				<div class="contact-div">
+						<ul class="contact">
+							<li>
+								<i class="material-icons md-36 brzblue">phone</i>
+								<a href="tel:+358407030906" class="contact-text">+358 40 7030906</a>	
+							</li>
+							<li>
+								<i class="material-icons md-36 brzblue">email</i>
+								<a href="mailto:henrik@carlstrom.fi?Subject=Subaru%20BRZ" target="_top" class="contact-text">henrik@carlstrom.fi</a>
+							</li>
+						</ul>
+					</div>
+					<div class="language-div">
+						<ul class="language-menu">
+							<li><a href="index-en.html" class="selected-lang">EN</a></li>
+							<li><a href="index.html">FI</a></li>
+							<!-- <li><a href="index.html">SV</a></li> -->
+						</ul>
+					</div>
+					
+				</div>
 			</div>
 		</header>
 
@@ -109,80 +128,346 @@
 
 
 			<div class="row banner">
-      			<img src="images/000-cover.jpg" alt="Subaru BRZ" title="click to view gallery" onclick="openPhotoSwipe();">
+      			<img src="images/large/000-cover.jpg" alt="Subaru BRZ" title="click to view gallery" onclick="openPhotoSwipe();">
       		</div>
       		<div class="gallery">
-<!--       			<div class="slide-button">
-      				<a href="#">
-      					<
-      				</a>
-      			</div> -->
-      			<div class="thumbnail">
-      				<a onclick="openPhotoSwipe();">
-      					<img src="images/002-front_right_1.jpg" alt="Subaru BRZ">
-      				</a>	
+       			<div class="arrows">
+					<img id="left" src="images/left_black.png" alt="Subaru BRZ" onclick="ImageCarouselSlideLeft();">
       			</div>
       			<div class="thumbnail">
-      				<a onclick="openPhotoSwipe();">
-      					<img src="images/002-front_right_2.jpg" alt="Subaru BRZ">
-      				</a>	
+					<img id="image_thumbnail_1" src="" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">
       			</div>
       			<div class="thumbnail">
-      				<a onclick="openPhotoSwipe();">
-      					<img src="images/008-rear_2.jpg" alt="Subaru BRZ">
-      				</a>	
+					<img id="image_thumbnail_2" src="" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">
       			</div>
       			<div class="thumbnail">
-      				<a onclick="openPhotoSwipe();">
-      					<img src="images/003-front_3_Not.jpg" alt="Subaru BRZ">
-      				</a>	
+					<img id="image_thumbnail_3" src="" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">
+      			</div>
+      			<div class="thumbnail">
+					<img id="image_thumbnail_4" src="" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">
       			</div>	
       			<div class="thumbnail">
-      				<a onclick="openPhotoSwipe();">
-      					<img src="images/006-left.jpg" alt="Subaru BRZ">
-      				</a>	
+					<img id="image_thumbnail_5" src="" alt="Subaru BRZ" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">
       			</div>
-<!--       			<div class="slide-button">
-      				<a href="#">
-      					>
-      				</a>
-      			</div>	 -->	
+       			<div class="arrows">
+					<img id="left" src="images/right_black.png" alt="Subaru BRZ" onclick="ImageCarouselSlideRight();">
+      			</div>
       		</div>
-
-      		<div class="row section description gray-background">
+      		<div class="row section gray-background">
+      			<div class="section-header">
+      				<h1>Price</h1>
+      				<hr class="trans--grow">
+      			</div>
+      			<div class="section-content  price">
+      				<div class="section-text full-length-section">
+      					<p> 32,900 € </p><br/>
+      					<p>For the financing it is possible to transfer an existing loan from Pohjola or take out a new loan for example from <a href="https://www.s-pankki.fi/fi/lainat-ja-luotot/s-laina/">S-Panki</a>.</p>
+      				</div>
+      			</div>
+      		</div>
+      		<div class="row section white-background">
       			<div class="section-header">
       				<h1>Description</h1>
       				<hr class="trans--grow">
       			</div>
-      			<div class="section-content">
-      				<div class="section-text">
-	      			Subaru BRZ: it stands for Boxer, Rear-wheel drive, Zenith. No, that’s not a particularly dynamic name, which is a shame - because the car certainly is. Jointly developed with Toyota, the BRZ marks a break from tradition for four-wheel drive stalwarts Subaru. The BRZ instead boasts a lightweight rear-drive chassis, although it does use a Subaru-trademark flat-four engine mounted low in the front. So low, in fact, Subaru says the centre of gravity is lower than a Ferrari 458’s. <br/>
-
-					Toyota may have done the design and the direct injection tech for the engine, but Subaru has done pretty much everything else. This is very much Subaru’s car, meaning the small coupe duo is most authentically replicated in BRZ guise. A brand new car built from scratch, it’s all been designed to maximise driver entertainment. 
+      			<div class="section-content description">
+      				<div class="section-text full-length-section">
+	      			<p>When comparing today's sports cars, taking into account the price / quality ratios, BRZ is in my opinion the best sports car today.</p>
+					<p>The driving position, driving feel and the joy of feeling the BRZ's driving gets is priceless.
+					Every single driving this car, city ride or driving to the cottage, is so funny that you're good cheer rest of the day.</p>
+ 
+					<p>Parhaimmillaan tämä auto on kuitenkin pienillä mutkikkailla teillä, missä muut ajavat reippaasti nopeusrajoitusten alle.<br/>
+					Siinä kun BRZ:a painaa nopeusrajoitusten mukaan mukisematta tai jopa vähän yli ;), on niitä hetkiä joita ei ikinä edes saavuteta monilla muilla autoilla, ja saman tunnelman saamiseen muissa urheiluautoissa voi maksaa jopa tuplasti enemmän.</p>
+ 
+					<p>Ja hintaan nähden tämä auto on upea, se saa ihmisten päät kääntymään ja pitkillä katseilla seuraamaan kun ajaa kaduilla.<br/>
+					Ihmiset myös haluavat ottaa tästä autosta kuvia, se jos jotain on merkki kunnoituksesta minkä tämä auto on ansainnut.</p>
+ 
+					<p>Tämän takia BRZ:aa kannattaa hankkia ja siitä nauttia.
+					Nyt annan sinulle saman mahdollisuuden minkä minulla on ollut, muuttuneen elämäntilanteeni takia.</p>
 					</div>
-	      			<div class="section-image">
-	      				<img src="images/002-front_right_1.jpg">
-	      			</div>
       			</div>
       		</div>
-      		<div class="row section features white-background">
+      		<div class="row section features gray-background">
       			<div class="section-header">
-      				<h1>Features</h1>
+      				<h1>Basic Information</h1>
       				<hr>
   				</div>
+  				<div class="section-content">
+  					<div class="section-text col-sm-6 left-align">
+  						<table class="basic-table">
+						<tr><td>Model Year</td><td>2015 (registered 12-2014)</td></tr>
+						<tr><td>Katsastettu***</td><td>New car</td></tr>
+						<tr><td>Registration Number</td><td>YIV-461</td></tr>
+						<tr><td>Mileage</td><td>20 000 km</td></tr>
+						<tr><td>Engine</td><td>2.0 l, Petrol</td></tr>
+						<tr><td>Drive Type</td><td>Rear-wheel drive</td></tr>
+						<tr><td>Transmission</td><td>Automatic</td></tr>
+						<tr><td>Location</td><td>Helsinki area</td></tr>
+						<tr><td>Owners</td><td>1</td></tr>
+						<tr><td>Service***</td><td>Täydellinen merkkiliikkeen huoltokirja***</td></tr>
+						<tr><td>Warranty</td><td>Factory warranty valid***</td></tr>
+						<tr><td>Tires</td><td>Winter + summer tires + rims*** (<a href="http://www.ebay.com/gds/What-Are-the-Benefits-of-Alloy-Wheels-/10000000177404818/g.html" target="_blank">anthracite aluminium</a>) 215/45R17</td></tr>
+						</table>
+					</div>
+  					<div class="section-image col-sm-6 right-align">
+	      				<img src="images/medium/002-front_right_1.jpg" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">
+	      			</div>
+	      		</div>
       		</div>
-      		<div class="row section interior gray-background">
-      			<div class="section-header">
-      				<h1>Interior</h1>
-      				<hr>
+      		<div class="row section interior white-background">
+	  			<div class="section-header">
+	  				<h1>Technical</h1>
+	  				<hr>
+	  			</div>	
+      			<div class="section-text full-length-section">
+      				<div class="feature-list-container col-m-4 left-align">
+						 <table class="styled-table">
+							<tr><th colspan="2">ENGINE</th></tr>
+							<tr><td>Type</td><td>Boxer, liquid-cooled, DOHC 16-valve</td></tr>
+							<tr><td>Cylinder</td><td>4-cylinder</td></tr>
+							<tr><td>Bore x stroke (mm)</td><td>86,0 x 86,0</td></tr>
+							<tr><td>Capacity (cm3)</td><td>1998</td></tr>
+							<tr><td>Compression ratio</td><td>12,5</td></tr>
+							<tr><td>Fuel system</td><td>Direct injection</td></tr>
+							<tr><td>Fuel tank capacity (litres)</td><td>50</td></tr>
+							<tr><td>Fuel</td><td>Petrol</td></tr>
+						</table>
+      				</div>
+      				<div class="feature-list-container col-m-4 center-align">
+						<table class="styled-table">
+							<tr><th colspan="2">POWER</th></tr>
+							<tr><td>Maximum power output (hv(kW)/ r/min)</td><td>200 (147) / 7.000</td></tr>
+							<tr><td>Maximum torque (Nm/ r/min)</td><td>205 (20,9) /6400-6600</td></tr>
+							<tr><td>Top speed (km/h)</td><td>210</td></tr>
+							<tr><td>Acceleration 0-100 km/h (sec)</td><td>8,2</td></tr>
+							<tr><td><B>Fuel economy l/100km</B></td><td></td></tr>
+							<tr><td>City</td><td>9,6</td></tr>
+							<tr><td>Highway</td><td>5,7</td></tr>
+							<tr><td>Combined</td><td>7,1</td></tr>
+							<tr><td><B>CO2 emissions g/km</B></td><td></td></tr>
+							<tr><td>City</td><td>223</td></tr>
+							<tr><td>Highway</td><td>131</td></tr>
+							<tr><td>Combined</td><td>164</td></tr>
+							<tr><td>Emission standards</td><td>Euro 6b</td></tr>
+						</table>
+      				</div>
+      				<div class="feature-list-container col-m-4 right-align">
+						<table class="styled-table">
+							<tr><th colspan="2">GEARBOX</th></tr>
+							<tr><td>Power distribution***</td><td>Rear-wheel drive</td></tr>
+							<tr><td><B>Gear ratios</B></td><td></td></tr>
+							<tr><td>Gear ratio 1st</td><td>3.626 (MT) / 3,538 (AT)</td></tr>
+							<tr><td>Gear ratio 2nd</td><td>2.188 (MT) / 2.060 (AT)</td></tr>
+							<tr><td>Gear ratio 3rd</td><td>1.541 (MT) / 1.404 (AT)</td></tr>
+							<tr><td>Gear ratio 4th</td><td>1.213 (MT) / 1.000 (AT)</td></tr>
+							<tr><td>Gear ratio 5th</td><td>1.000 (MT) / 0.713 (AT)</td></tr>
+							<tr><td>Gear ratio 6th</td><td>0.767 (MT) / 0.582 (AT)</td></tr>
+							<tr><td>Gear ratio reverse</td><td>3.437 (MT) / 3.168 (AT)</td></tr>
+							<tr><td>Final reduction gear ratio</td><td>4.100 (MT) / 4.100 (AT)</td></tr>
+						</table>
+      				</div>
       			</div>
       		</div>
-      		<div class="row section exterior white-background">
+      		<div class="row section features gray-background">
       			<div class="section-header">
       				<h1>Exterior</h1>
       				<hr>
+  				</div>
+  				<div class="section-content">
+  				  	<div class="section-image col-sm-6 left-align">
+	      				<img src="images/medium/005-front_left_6.jpg" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">
+	      			</div>
+  					<div class="section-text col-sm-6 right-align">
+  						<table class="basic-table">
+							<tr><td>Automatic headlights</td></tr>
+							<tr><td>Bi-Xenon headlights</td></tr>
+							<tr><td>Ajovalojen pesimet***</td></tr>
+							<tr><td>Front fog lights</td></tr>
+							<tr><td>Rear fog lights</td></tr>
+							<tr><td>Door mirrors - power folding</td></tr>
+							<tr><td>UV protective glasses</td></tr>
+							<tr><td>17 inch alloy wheels</td></tr>
+							<tr><td>Pohjapanssari***</td></tr>
+							<tr><td>Side garnish</td></tr>
+							<tr><td>Back spoiler</td></tr>
+							<tr><td>Rear diffuser</td></tr>
+							<tr><td>Shark fin antenna</td></tr>
+							<tr><td>Chrome dual exhaust</td></tr>
+						</table>
+					</div>
+	      		</div>
+      		</div>
+      		<div class="row section interior white-background">
+	  			<div class="section-header">
+	  				<h1>Measurements</h1>
+	  				<hr>
+	  			</div>
+      			<div class="section-text full-length-section">
+      				<div class="feature-list-container col-m-4 left-align">
+						<table class="styled-table">
+							<tr><th colspan="2">DIMENSIONS AND WEIGHT</th></tr>
+							<tr><td>Overall length (mm)</td><td>4240</td></tr>
+							<tr><td>Overall width (mm)</td><td>1775</td></tr>
+							<tr><td>Overall height (mm)</td><td>1320</td></tr>
+							<tr><td>Wheel base (mm)</td><td>2570</td></tr>
+							<tr><td>Front track (mm)</td><td>1520</td></tr>
+							<tr><td>Rear track (mm)</td><td>1540</td></tr>
+							<tr><td>Minimum ground clearance (mm)</td><td>130</td></tr>
+							<tr><td>Cargo volume (litres)</td><td>243</td></tr>
+							<tr><td>Seating capacity</td><td>4</td></tr>
+							<tr><td>Kerb weight (kg)</td><td>1339</td></tr>
+							<tr><td>Gross weight (kg)</td><td>1700</td></tr>
+						</table>
+      				</div>
+      				<div class="feature-list-container col-m-8 right-align">
+						<table class="styled-table">
+							<tr><th colspan="2">CHASSIES***</th></tr>
+							<tr><td>Ohjaus</td><td>Sähkötehosteinen hammastanko</td></tr>
+							<tr><td>Jousitus</td><td>Edessä: MacPherson -joustintuet, takana: Monivarsituenta</td></tr>
+							<tr><td>Kääntöympyrä (m)</td><td>10,8</td></tr>
+							<tr><td>Jarrut</td><td>Edessä ja takana: jäähdytetyt levyjarrut</td></tr>
+							<tr><td>Renkaat / rengaskoko</td><td>215/45R17</td></tr>
+						</table>
+      				</div>
       			</div>
-      		</div>	
+      		</div>
+      		<div class="row section features gray-background">
+      			<div class="section-header">
+      				<h1>Interior</h1>
+      				<hr>
+  				</div>
+  				<div class="section-content">
+  					<div class="section-text col-sm-6 left-align">
+  						<table class="basic-table">
+							<tr><td>Leather steering wheel / gear shift and park brake</td></tr>
+							<tr><td>Leather/Alcantara® seats</td></tr>
+							<tr><td>Simulated carbon fiber dashboard trim***</td></tr>
+							<tr><td>Chrome side step plate***</td></tr>
+							<tr><td>Sports bucket seats - driver and front passenger</td></tr>
+							<tr><td>6-way manually adjustable driver's seat</td></tr>
+							<tr><td>4-way manually adjustable front-passenger's seat***</td></tr>
+							<tr><td>Heated front seats</td></tr>
+							<tr><td>Ovien kynnyssuoja***</td></tr>
+							<tr><td>Folding rear seat - one piece</td></tr>
+							<tr><td>Storage pockets behind the front seat backrest</td></tr>
+							<tr><td>Manual seat height lifter - driver</td></tr>
+						</table>
+					</div>
+  					<div class="section-image col-sm-6 right-align">
+	      				<img src="images/medium/013-inside_front.jpg" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">
+	      			</div>
+	      		</div>
+      		</div>
+      		<div class="row section interior white-background">
+	  			<div class="section-header">
+	  				<h1>Amenities</h1>
+	  				<hr>
+	  			</div>
+      			<div class="section-text full-length-section">
+      				<div class="feature-list-container col-m-4 left-align">
+						 <table class="styled-table">
+							<tr><th>CONVENIENCE</th></tr>
+							<tr><td>Power windows with auto up/down</td></tr>
+							<tr><td>Remote central locking</td></tr>
+							<tr><td>Smart key and push-start ignition</td></tr>
+							<tr><td>Illuminated sunvisor with vanity mirrors - driver and front passenger</td></tr>
+							<tr><td>Tavaratilan valaistus***</td></tr>
+							<tr><td>Power mirrors</td></tr>
+							<tr><td>Center console with 12-volt power outlet</td></tr>
+							<tr><td>Dual cup holders in center console</td></tr>
+							<tr><td>Single bottle holder in each door panel</td></tr>
+							<tr><td>Interior boot opening mechanism</td></tr>
+							<tr><td>Interior fuel lid lock release	</td></tr>
+							<tr><td>Glove box with 12-volt power outlet</td></tr>
+							<tr><td>Säilytyslokero tavaratilan pohjalla***</td></tr>
+							<tr><td>Tyre repair kit</td></tr>
+						</table>
+      				</div>
+      				<div class="feature-list-container col-m-4 center-align">
+						<table class="styled-table">
+							<tr><th>CONTROLS</th></tr>
+							<tr><td>Sport-design gauges</td></tr>
+							<tr><td>Digital and analog speedometer</td></tr>
+							<tr><td>Adjustable steering wheel - height and telescopic</td></tr>
+							<tr><td>Paddle gear shift on steering column</td></tr>
+							<tr><td>Power steering</td></tr>
+							<tr><td>Multi-function display (displays instantaneous and average fuel consumption, outside temperature, odometer and tripmeter)</td></tr>
+							<tr><td>Tachometer with adjustable audible and visual signal</td></tr>
+							<tr><td>Cruise control</td></tr>
+							<tr><td>Navigator</td></tr>
+							<tr><td>CD Player with two loudspeakers</td></tr>
+							<tr><td>USB/AUX connection - front centre console</td></tr>
+							<tr><td>Aluminium sports pedals</td></tr>
+						</table>
+      				</div>
+      				<div class="feature-list-container col-m-4 right-align">
+						<table class="styled-table">
+							<tr><th>AIR CONDITIONING</th></tr>
+							<tr><td>Dual-zone automatic climate control</td></tr>
+							<tr><td>Heated exterior mirrors</td></tr>
+							<tr><td>Anti-dust filter***</td></tr>
+							<tr><td>Front and side demisters</td></tr>
+							<tr><td>Intermittent windshield wipers function</td></tr>
+							<tr><td>Rear windscreen demister</td></tr>
+							<tr><td>Heated seats - driver and front passenger***</td></tr>
+						</table>
+      				</div>
+      			</div>
+      		</div>
+      		<div class="row section features gray-background">
+      			<div class="section-header">
+      				<h1>Safety</h1>
+      				<hr>
+  				</div>
+  				<div class="section-content">
+  					<div class="section-text col-sm-6 right-align">
+  						<table class="basic-table">
+  							<tr><td>5-star ANCAP@ occupant safety rating (maximum 5)***</td></tr>
+							<tr><td>SRS airbags - dual front</td></tr>
+							<tr><td>SRS airbags - dual front side</td></tr>
+							<tr><td>SRS airbags - curtain</td></tr>
+							<tr><td>SRS airbags - knee airbag</td></tr>
+							<tr><td>Side impact protection doors</td></tr>
+							<tr><td>Kolaritilanteessa kokoonpainuva ohjauspylväs***</td></tr>
+							<tr><td>Height adjustable front seat headrests</td></tr>
+							<tr><td>Seat belt warning lights</td></tr>
+							<tr><td>Front seat belts with pretensioners and load limiters</td></tr>
+							<tr><td>3 point A/ELR rear seat belts</td></tr>
+							<tr><td>Turvapoljinjärjestelmä***</td></tr>
+							<tr><td>ABS brakes, 4 sensors, 4 channels</td></tr>
+							<tr><td>Hill start assist (BAS)***</td></tr>
+							<tr><td>Child seats ISOFIX</td></tr>
+							<tr><td>Käynnistyksenesto***</td></tr>
+							<tr><td>Tire Pressure Monitoring System (TPMS)</td></tr>
+							<tr><td>Vehicle Stability Control (VSC)</td></tr>
+							<tr><td>SPORT and SNOW -ajonasetus***</td></tr>
+							<tr><td>Torsen-tasauspyörästö</td></tr>
+						</table>
+					</div>
+  					<div class="section-image col-sm-6 left-align">
+	      				<img src="images/medium/015-inside_front_4.jpg" onclick="openPhotoSwipeWithCurrentImageSource(this.src);">
+	      			</div>
+	      		</div>
+      		</div>
+      		<div class="row section white-background">
+      			<div class="section-header">
+      				<h1>Reviews</h1>
+      				<hr class="trans--grow">
+      			</div>
+      			<div class="section-content reviews">
+      				<div class="section-text full-length-section">
+	      			<p>"For purity and driver entertainment, the BRZ is the best in class. 9/10 " <a href="http://www.topgear.com/car-reviews/subaru/brz" target="_blank">BBC TopGear</a> </p>
+	      			<p>"This coupé was built to handle better than anything on four wheels, and it shows. The weight balance is ideal and the steering is just telepathic." <a href="https://www.youtube.com/watch?v=-ydh15dWPwU">Youtube: Subaru BRZ | 5 Reasons to Buy</a></p>
+	      			<p>"It's a very very attractive sportscar." <a href="https://www.youtube.com/watch?v=ZHvdbcBer1M">Youtube: 2015 Subaru BRZ - Redline: Review</a></p>
+	      			<p>"The better a driver you are the more fun you will have in a BRZ." <a href="https://www.youtube.com/watch?v=4jaBkh0G43M">2016 Subaru BRZ Review</a></p>
+ 	      			<p>"I think the car is just beautiful." "I love the way it looks." <a href="https://www.youtube.com/watch?v=3lzXgGo9wNU">Youtube: Subaru BRZ In Depth Tour, Engine Sound, Exterior and Interior</a></p>
+					</div>
+      			</div>
+      		</div>
 		</div>
+		<footer class="footer">
+		      <div class="text-center">By Clarity Designs &copy; Copyright 2016</div>
+			
+		</footer>
 	</body>
 </html>
