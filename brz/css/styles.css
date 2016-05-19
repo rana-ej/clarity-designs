@@ -480,13 +480,13 @@ a {
 	    width: 100%;
 	}
 
-	.contact-div{
-	    width: 50%;
-	    margin-left: 30%;
+	.contact-div {
+	    width: 70%;
+	    text-align: right;
 	}
 
 	.language-div {
-		width: 50%;
+		width: 30%;
 	}
 
 	.basic-table, .styled-table {
