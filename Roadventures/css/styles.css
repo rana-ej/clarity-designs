@@ -356,14 +356,21 @@ body {
 /* END OF DESTINATIONS SIDE BAR */
 
 /* CONTACT FORM */
+
+.contact-container {
+    background: #eaebeb url("../images/middle-east/banner/017.jpg") no-repeat;
+    height: 100%;
+    background-size: cover;
+}
 .form-container {
-    margin: 30px 200px;
+    margin: 100px 300px;
 }
 
 #contact-form h1{
     display: block;
-    margin-bottom: 20px;
-    color: #1aa2d9;
+    margin-bottom: 30px;
+    /*color: #1aa2d9;*/
+    color: #444;
     text-transform: uppercase;
 }
 
@@ -372,7 +379,7 @@ body {
     border: none;
     width: 47.8%;
     margin-right: 2%;
-    margin-bottom: 9px;
+    margin-bottom: 12px;
     box-sizing: border-box;
 }
 
@@ -411,6 +418,7 @@ body {
     letter-spacing: 2px;
     padding: 0 35px;
     line-height: 42px;
+    margin-top: 10px;
 }
 
 
