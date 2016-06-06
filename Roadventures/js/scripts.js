@@ -1,4 +1,20 @@
+function EmailSubmitFormSuccess(returnText)
+{
+	alert('Success!\n' + returnText);
+}
 
+function EmailSubmitFormError(xhr, textStatus, errorThrown)
+{
+alert("EmailSubmitFormError: " + xhr + ", textStatus=" +textStatus + ", errorThrown=" + errorThrown);
+alert(xhr.responseText);
+	var jsonValues = JSON.parse(xhr.responseText);
+alert("jsonValues: " + jsonValues);
+	alert('An error occurred: ' + jsonValues.Message);
+
+	alert("Message: " + jsonValues.Message);
+	alert("StackTrace: " + jsonValues.StackTrace);
+	alert("ExceptionType: " + jsonValues.ExceptionType);
+}
 
 function SendEmailForm()
 {
@@ -13,12 +29,14 @@ function SendEmailForm()
 		return;
 	}
 
-	//contact-first-name, contact-last-name, contact-email, message
 	$.ajax
 	(
 		{ 
 			url: 'http://rana.carlstrom.fi/Roadventures/email-submit-form.php',
-	         
+			async: false,
+			dataType: "json",
+	        type: 'post',
+			
 	        data:
 	        { 
 	         	firstname: FirstName, 
@@ -27,17 +45,8 @@ function SendEmailForm()
 	         	message: Message 
 	        },
 	         
-	        type: 'post',
-	         
-	        success: function(output) 
-	        {
-                  alert('ok'/*output*/);
-            },
-
-            error: function()
-            {
-    			alert('error!');
-  			}
+	        success: EmailSubmitFormSuccess,
+            error: EmailSubmitFormError
 		}
 	);
 }
