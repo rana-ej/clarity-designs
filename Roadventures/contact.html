@@ -12,6 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 	</head>
 
 	<body>
@@ -71,7 +72,7 @@
       </div> -->  
       <div class="row row-offcanvas row-offcanvas-right">
         <div class="form-container">
-          <form id="contact-form" method="post" action="http://rana.carlstrom.fi/Roadventures/email-submit-form.php">
+          <form id="contact-form" action="#"> <!--method="post" action="http://rana.carlstrom.fi/Roadventures/email-submit-form.php">-->
             <div>
               <h1>Contact Us</h1>
             </div>
@@ -85,10 +86,10 @@
               <input required type="email" id="contact-email" name="email" placeholder="Email"></input>
             </div>
             <div class="input big">
-              <textarea required name="message" placeholder="Your message"></textarea>
+              <textarea required name="message" id="contact-message" placeholder="Your message"></textarea>
             </div>
             <div>
-              <button>Send your message</button> 
+              <input type="button" name="submit" value="Send your message" onClick="SendEmailForm();">Send your message</input> 
             </div>
           </form>
         </div>

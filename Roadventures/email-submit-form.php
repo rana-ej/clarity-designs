@@ -17,15 +17,15 @@ if(isset($_POST['email'])) {
     }
      
     // validation expected data exists
-    if(!isset($_POST['first-name']) ||
-        !isset($_POST['last-name']) ||
+    if(!isset($_POST['firstname']) ||
+        !isset($_POST['lastname']) ||
         !isset($_POST['email']) ||
         !isset($_POST['message'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
      
-    $first_name = $_POST['first-name']; // required
-    $last_name = $_POST['last-name']; // required
+    $first_name = $_POST['firstname']; // required
+    $last_name = $_POST['lastname']; // required
     $email_from = $_POST['email']; // required
     $comments = $_POST['message']; // required
      
