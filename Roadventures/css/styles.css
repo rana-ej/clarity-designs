@@ -1,22 +1,11 @@
 body {
     background-color: #eaebeb;
 }
-/* FRONT PAGE HEADER */
-.my-front-navbar {
-	background-color: #333333;
-	color: #ffffff;
-	height: 120px;
-    margin-bottom: 0px;
-    border-radius: 0px;
-    border: none;
-}
-/* END OF FRONT PAGE HEADER */
 
-
-/* OTHER PAGES HEADER */
+/* HEADER */
 .my-pages-navbar {
     background-color: #333333;
-    height: 80px;
+    height: 100px;
     border: none;
     border-radius: 0px;
     margin-bottom: 0px;
@@ -74,31 +63,14 @@ body {
     background: none;
 }
 
-
-
-
-/*
 #logo {
-    font-family: 'Fontdiner Swanky', cursive;
-	position: absolute;
-	display: inline-block;
+    font-family: 'Satisfy', cursive;
 	margin: 30px 30px;
-    text-transform: uppercase;
-    font-size: 350%;
+    font-size: 450%;
     color: #ffe67b;
+    margin-top: 0;
 }
-
-
-
-
-
-
-*/
-/* END OF OTHER PAGES HEADER */
-
-/* TOP BANNER */
-/* END OF TOP BANNER */
-
+/* END OF HEADER */
 
 /* MAIN CONTENT */
 .my-front-jumbo {
@@ -427,6 +399,7 @@ body {
     width: 100%;
     line-height: 100px;
     padding: 0 15px;
+    outline-color: #000;
 }
 
 #contact-form button {
@@ -438,7 +411,7 @@ body {
     letter-spacing: 2px;
     padding: 0 35px;
     line-height: 42px;
-}*/
+}
 
 
 
