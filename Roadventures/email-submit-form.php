@@ -87,10 +87,6 @@
         }
     }
 
-    // CHANGE THE TWO LINES BELOW
-    $email_to = "theroadventures@gmail.com";
-    $email_subject = "Roadventures form submissions";
-     
     function ReturnErrorMessage($error) 
     {
         http_response_code(400);
@@ -157,12 +153,27 @@
 		if(strlen($validated_email_message) > 0)
 		{ 
 			// create email headers
-			$headers = 'From: '.$email_from."\r\n".
-			'Reply-To: '.$email_from."\r\n" .
-			'X-Mailer: PHP/' . phpversion();
-			@mail($email_to, $email_subject, $validated_email_message, $headers);  
-			http_response_code(200);
-			echo "<BR>Thank you for contacting us. We will be in touch with you very soon.<BR>";
+			// CHANGE THE TWO LINES BELOW
+			$email_to = "theroadventures@gmail.com";
+			$email_subject = "Roadventures form submissions";
+     
+			$headers   = array();
+			$headers[] = "MIME-Version: 1.0";
+			$headers[] = "Content-type: text/plain; charset=iso-8859-1";
+			$headers[] = "From: {$FirstName} {$LastName} <{$Email}>";
+			//$headers[] = "Bcc: JJ Chong <bcc@domain2.com>";
+			$headers[] = "Reply-To: {$FirstName} {$LastName} <{$Email}>";
+			$headers[] = "Subject: {$email_subject}";
+			$headers[] = "X-Mailer: PHP/".phpversion();
+
+			mail($email_to, $email_subject, $validated_email_message, implode("\r\n", $headers));
+			/*
+			$headers = 'From: ' . $email_from . "\r\n".
+						'Reply-To: ' . $email_from . "\r\n" .
+						'X-Mailer: PHP/' . phpversion();
+			@mail($email_to, $email_subject, $validated_email_message, $headers);  */
+			//http_response_code(200);
+			echo "Thank you for contacting us. We will be in touch with you very soon.";
 		}
 		else
 		{
