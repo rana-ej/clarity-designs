@@ -20,7 +20,7 @@ body {
 }
 
 .my-pages-navbar .my-pages-menu>li>a {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #ffffff;
     text-shadow: none;
     text-transform: uppercase;
@@ -42,7 +42,6 @@ body {
 
 .my-pages-menu > li > .my-menu-dropdown {
     background-color: #444444;
-    font-size: 70%;
     width: 100%;
     border-radius: 0px;
     border-top: solid 4px #1aa2d9;
@@ -65,11 +64,11 @@ body {
 
 #logo {
     font-family: 'Satisfy', cursive;
-	margin: 30px 30px;
-    font-size: 450%;
+/*	margin: 30px 30px;*/
+    font-size: 500%;
     color: #ffe67b;
-    margin-top: 0;
-    padding-top: 10px;
+    margin: auto auto;
+    padding-top: 20px;
 }
 /* END OF HEADER */
 
@@ -362,6 +361,7 @@ body {
     background: #eaebeb url("../images/middle-east/banner/017.jpg") no-repeat;
     height: 100%;
     background-size: cover;
+    opacity: 1;
 }
 .form-container {
     margin: 80px 300px;
