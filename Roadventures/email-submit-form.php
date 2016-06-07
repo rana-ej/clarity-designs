@@ -1,10 +1,29 @@
 <?php
-    if (!function_exists('http_response_code')) {
-        function http_response_code($code = NULL) {
+	// Before Headers are sent
+	
+	// Set past expiration date
+	header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+	
+	// Define mod date to indicate page is modified
+	header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+	
+	// HTTP 1.1 cache commands
+	header("Cache-Control: no-store, no-cache, must-revalidate");
+	header("Cache-Control: post-check=0, pre-check=0", false);
+	
+	// HTTP 1.0 cache commands
+	header("Pragma: no-cache");
 
-            if ($code !== NULL) {
 
-                switch ($code) {
+
+    if (!function_exists('http_response_code')) 
+    {
+        function http_response_code($code = NULL) 
+        {
+            if ($code !== NULL) 
+            {
+                switch ($code) 
+                {
                     case 100: $text = 'Continue'; break;
                     case 101: $text = 'Switching Protocols'; break;
                     case 200: $text = 'OK'; break;
@@ -49,35 +68,30 @@
 
                 $protocol = (isset($_SERVER['SERVER_PROTOCOL']) ? $_SERVER['SERVER_PROTOCOL'] : 'HTTP/1.0');
 
-                header($protocol . ' ' . $code . ' ' . $text);
+                echo $protocol . ' ' . $code . ' ' . $text;
 
                 $GLOBALS['http_response_code'] = $code;
-
-            } else {
-
+            } 
+            else 
+            {
                 $code = (isset($GLOBALS['http_response_code']) ? $GLOBALS['http_response_code'] : 200);
-
             }
 
             return $code;
-
         }
     }
 
-?>
-
-<?php
     // CHANGE THE TWO LINES BELOW
     $email_to = "theroadventures@gmail.com";
     $email_subject = "Roadventures form submissions";
      
     function ReturnErrorMessage($error) 
     {
-		$Result = "We are very sorry, but there were error(s) found with the form you submitted. ";
+        http_response_code(400);
+		$Result = "<BR>We are very sorry, but there were error(s) found with the form you submitted. ";
         $Result .= "These errors appear below.<br /><br />";
         $Result .= $error . "<br /><br />";
         $Result .= "Please go back and fix these errors.<br /><br />";
-        http_response_code(400);
 		exit($Result);
     }
 
@@ -141,13 +155,13 @@
 			'Reply-To: '.$email_from."\r\n" .
 			'X-Mailer: PHP/' . phpversion();
 			@mail($email_to, $email_subject, $validated_email_message, $headers);  
-			echo "Thank you for contacting us. We will be in touch with you very soon.";
 			http_response_code(200);
+			echo "<BR>Thank you for contacting us. We will be in touch with you very soon.<BR>";
 		}
 		else
 		{
-			echo "An unspecified error occurred, you may try again in a moment.";
 			http_response_code(405);
+			echo "<BR>An unspecified error occurred, you may try again in a moment.";
 		}
 	}
 	
@@ -171,8 +185,8 @@ $Message = GetValueFromPostOrGet('message');
 
 if(empty($FirstName) || empty($LastName) || empty($Email) || empty($Message))
 {
-	echo 'We are sorry, but there appears to be a problem with the form you submitted (some values appeared empty).';
 	http_response_code(400);
+	echo '<BR>We are sorry, but there appears to be a problem with the form you submitted (some values appeared empty).';
 }
 else
 {
