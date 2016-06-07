@@ -6,6 +6,7 @@ function EmailSubmitFormSuccess(returnText)
 function EmailSubmitFormError(xhr, textStatus, errorThrown)
 {
 alert("EmailSubmitFormError: " + xhr + ", textStatus=" +textStatus + ", errorThrown=" + errorThrown);
+console.log(xhr);
 alert(xhr.responseText);
 	var jsonValues = JSON.parse(xhr.responseText);
 alert("jsonValues: " + jsonValues);
