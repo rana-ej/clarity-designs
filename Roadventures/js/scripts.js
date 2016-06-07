@@ -34,7 +34,7 @@ function SendEmailForm()
 		{ 
 			url: 'http://rana.carlstrom.fi/Roadventures/email-submit-form.php',
 			/*async: false,*/
-			dataType: "json",
+			/*dataType: "json",*/
 	        type: 'post',
 			
 	        data:
