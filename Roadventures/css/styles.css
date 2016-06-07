@@ -423,9 +423,26 @@ body {
     margin-top: 10px;
 }
 
-
-
 /* END OF CONTACT FORM */
+/* ABOUT PAGE */
+
+.my-team {
+    text-align: center;
+}
+
+.my-team h1, .my-passion h1, .my-partners h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.featurette-divider {
+    border-top: 1px solid #1aa2d9;
+    margin-top: 80px;
+    width: 80%;
+}
+/* END OF ABOUT PAGE*/
 
 
 
