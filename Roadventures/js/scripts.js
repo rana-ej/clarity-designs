@@ -5,16 +5,21 @@ function EmailSubmitFormSuccess(returnText)
 
 function EmailSubmitFormError(xhr, textStatus, errorThrown)
 {
-alert("EmailSubmitFormError: " + xhr + ", textStatus=" +textStatus + ", errorThrown=" + errorThrown);
-console.log(xhr);
-alert(xhr.responseText);
-	var jsonValues = JSON.parse(xhr.responseText);
-alert("jsonValues: " + jsonValues);
-	alert('An error occurred: ' + jsonValues.Message);
+	if(xhr != null)
+	{
+		//console.log(xhr);
+		if(xhr.responseText != null)
+		{
+			var jsonValues = JSON.parse(xhr.responseText);
+			alert('An error occurred: ' + jsonValues.Message);
 
-	alert("Message: " + jsonValues.Message);
-	alert("StackTrace: " + jsonValues.StackTrace);
-	alert("ExceptionType: " + jsonValues.ExceptionType);
+			/*
+			alert("Message: " + jsonValues.Message);
+			alert("StackTrace: " + jsonValues.StackTrace);
+			alert("ExceptionType: " + jsonValues.ExceptionType);
+			*/
+		}
+	}
 }
 
 function SendEmailForm()

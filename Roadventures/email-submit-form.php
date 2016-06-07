@@ -1,4 +1,10 @@
 <?php
+	// Allow cross-domain XmlHTTPRequests
+	/*Warning : This contains a security issue for your PHP file that it could be called by attackers. you have to use sessions and cookies for authentication to prevent your file/service against this attack. Your service is vulnerable to cross-site request forgery (CSRF).
+	https://en.wikipedia.org/wiki/Cross-site_request_forgery
+	*/
+	header('Access-Control-Allow-Origin: *');
+	
 	// Before Headers are sent
 	
 	// Set past expiration date
