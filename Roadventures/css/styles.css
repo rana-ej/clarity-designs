@@ -167,9 +167,24 @@ body {
     border: none;
 }
 
-.panel-footer ul{
+.panel-footer h2 {
+    color: #ffffff;
+}
+
+.panel-footer ul {
     list-style-type: none;
     padding: 0px;
+    color: #1aa2d9;
+}
+
+.panel-footer li a {
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.panel-footer li a:focus, .panel-footer li a:hover {
+    color: #1aa2d9;
+    text-decoration: none;
 }
 
 .social {
@@ -178,7 +193,7 @@ body {
 }
 
 .social a {
-    margin: 5px;
+    margin: 4px;
     display: inline-block;
 }
 
@@ -227,9 +242,17 @@ body {
     background: #375989;
 }
 
+.social .fa-envelope:hover { /* round instagram icon*/
+    background: #123456;
+}
+
+.social .fa-file-text:hover { /* round instagram icon*/
+    background: #1aa2d9;
+}
+
 #copyright {
 	margin-top: 20px;
-	font-size: 80%;
+	font-size: 90%;
 }
 
 /* END OF FOOTER */
