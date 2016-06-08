@@ -126,11 +126,11 @@ body {
 
 .my-destination-thumbnail img {
     overflow: hidden;
-    -webkit-transition: all 2s linear; /* Safari and Chrome */
-    -moz-transition: all 2s linear; /* Firefox */
-    -ms-transition: all 2s linear; /* IE 9 */
-    -o-transition: all 2s linear; /* Opera */
-    transition: all 2s linear;
+    -webkit-transition: all 0s linear; /* Safari and Chrome */
+    -moz-transition: all 0s linear; /* Firefox */
+    -ms-transition: all 0s linear; /* IE 9 */
+    -o-transition: all 0s linear; /* Opera */
+    transition: all 0s linear;
     width: 100%;
 }
 
@@ -140,6 +140,11 @@ body {
     -ms-transform:scale(1.25); /* IE 9 */
     -o-transform:scale(1.25); /* Opera */
     transform:scale(1.25);
+    -webkit-transition: all 2s linear; /* Safari and Chrome */
+    -moz-transition: all 2s linear; /* Firefox */
+    -ms-transition: all 2s linear; /* IE 9 */
+    -o-transition: all 2s linear; /* Opera */
+    transition: all 2s linear;
 }
 
 #latest-routes {
@@ -273,11 +278,11 @@ body {
     width: 100%;
     padding: inherit;
     overflow: hidden;
-    -webkit-transition: all 2s linear; /* Safari and Chrome */
-    -moz-transition: all 2s linear; /* Firefox */
-    -ms-transition: all 2s linear; /* IE 9 */
-    -o-transition: all 2s linear; /* Opera */
-    transition: all 2s linear;
+    -webkit-transition: all 0s linear; /* Safari and Chrome */
+    -moz-transition: all 0s linear; /* Firefox */
+    -ms-transition: all 0s linear; /* IE 9 */
+    -o-transition: all 0s linear; /* Opera */
+    transition: all 0s linear;
 }
 
 .my-tile-image img:hover, .my-tile-image img:focus, .my-tile-image img:active {
@@ -286,6 +291,11 @@ body {
     -ms-transform:scale(1.25); /* IE 9 */
     -o-transform:scale(1.25); /* Opera */
     transform:scale(1.25);
+    -webkit-transition: all 2s linear; /* Safari and Chrome */
+    -moz-transition: all 2s linear; /* Firefox */
+    -ms-transition: all 2s linear; /* IE 9 */
+    -o-transition: all 2s linear; /* Opera */
+    transition: all 2s linear;
     width: 100%;
 }
 
@@ -411,7 +421,7 @@ body {
     resize: none;
 }
 
-#contact-form button {
+#submit-button {
     border: none;
     border-radius: 8px;
     color: #ffffff;
@@ -421,6 +431,7 @@ body {
     padding: 0 35px;
     line-height: 42px;
     margin-top: 10px;
+    outline: none;
 }
 
 /* END OF CONTACT FORM */
@@ -438,7 +449,7 @@ body {
 }
 
 .featurette-divider {
-    border-top: 1px solid #1aa2d9;
+    border-top: 2px solid #1aa2d9;
     margin-top: 80px;
     width: 80%;
 }
