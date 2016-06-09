@@ -2,6 +2,11 @@ body {
     background-color: #eaebeb;
 }
 
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
 /* HEADER */
 .my-pages-navbar {
     background-color: #333333;
