@@ -126,11 +126,11 @@ body {
 
 .my-destination-thumbnail img {
     overflow: hidden;
-    -webkit-transition: all 0s linear; /* Safari and Chrome */
-    -moz-transition: all 0s linear; /* Firefox */
-    -ms-transition: all 0s linear; /* IE 9 */
-    -o-transition: all 0s linear; /* Opera */
-    transition: all 0s linear;
+    -webkit-transition: all 1s linear; /* Safari and Chrome */
+    -moz-transition: all 1s linear; /* Firefox */
+    -ms-transition: all 1s linear; /* IE 9 */
+    -o-transition: all 1s linear; /* Opera */
+    transition: all 1s linear;
     width: 100%;
 }
 
@@ -301,11 +301,11 @@ body {
     width: 100%;
     padding: inherit;
     overflow: hidden;
-    -webkit-transition: all 0s linear; /* Safari and Chrome */
-    -moz-transition: all 0s linear; /* Firefox */
-    -ms-transition: all 0s linear; /* IE 9 */
-    -o-transition: all 0s linear; /* Opera */
-    transition: all 0s linear;
+    -webkit-transition: all 1s linear; /* Safari and Chrome */
+    -moz-transition: all 1s linear; /* Firefox */
+    -ms-transition: all 1s linear; /* IE 9 */
+    -o-transition: all 1s linear; /* Opera */
+    transition: all 0.5s linear;
 }
 
 .my-tile-image img:hover, .my-tile-image img:focus, .my-tile-image img:active {
