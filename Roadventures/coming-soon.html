@@ -64,17 +64,28 @@
 			</nav> <!-- /.navbar -->
 		</header>
 
-    <div class="container-fluid contact-container">
+    <div class="container-fluid coming-soon-container">
 <!--       <div class="row my-top-banner">
         <div class="my-top-banner-image">
           <img src="images/middle-east/banner/017.jpg" alt="View of neuschwanstein castle, Germany">
         </div>
       </div> -->  
       <div class="row row-offcanvas row-offcanvas-right">
-        <div class="form-container">
+        <div class="form-container" id="coming-soon-form-container">
+          <h1>Coming Soon</h1>
           <p>An awesome new article is on the way. It will be coming very soon! <br/> Be one of the first to read it by entering your email below. We will notify you as soon as it's live. </p> 
-
-          <p>We promise to never spam you and keep your information secret.
+          <form id="subscribe-form" action="#">
+            <div class="input">
+              <input required type="text" id="subscribe-first-name" name="first-name" placeholder="Name"></input>
+            </div>
+            <div class="input big">
+              <input required type="email" id="subscribe-email" name="email" placeholder="Enter Your Email"></input>
+            </div>
+            <div>
+              <input type="button" name="submit" id="subscribe-button" value="Notify Me"></input> 
+            </div>
+          </form>
+          <p>We promise to never spam you and keep your information secret.</p>
         </div>
       </div><!--/row-->
     </div><!--/.container-->

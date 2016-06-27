@@ -469,6 +469,15 @@ body {
     text-align: center;
 }
 
+.my-passion {
+    background-color: #e2cfb0;
+}
+
+.my-team ,.my-passion, .my-partners {
+    padding-bottom: 80px;
+
+}
+
 .my-team h1, .my-passion h1, .my-partners h1 {
     text-transform: uppercase;
     text-align: center;
@@ -478,10 +487,43 @@ body {
 
 .featurette-divider {
     border-top: 2px solid #1aa2d9;
-    margin-top: 80px;
-    width: 80%;
+    margin: 80px auto;
+/*    width: 80%;*/
 }
 /* END OF ABOUT PAGE*/
+
+.coming-soon-container {
+/*    background: #eaebeb url("../images/about/high-res/lasvegas-route55.jpg") no-repeat;*/
+    background: #eaebeb url("../images/about/high-res/600.jpg") no-repeat;
+    height: 800px;
+    background-size: cover;
+    opacity: 1;
+
+}
+
+.coming-soon-container p:first-child{
+        font-size: 20px;
+}
+
+#coming-soon-form-container {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #eee;
+    opacity: 0.5;
+}
+
+#coming-soon-form-container p, #coming-soon-form-container h1{
+    opacity: 1;
+}
+
+
+
+@media (min-width: 992px)
+{
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
 
 
 
