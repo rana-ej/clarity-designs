@@ -94,8 +94,8 @@ body {
 .my-front-jumbo h1,  .my-front-jumbo h2 {
 	margin: 0 auto;
 	text-align: center;
-	background-color: #eee;
-	opacity: 0.5;
+    background: rgb(238, 238, 238); /* Fall-back for browsers that don't support rgba */
+    background: rgba(238, 238, 238, 0.5);
     padding-top: 10px;
     padding-bottom: 10px;
         /*font-family: 'Kaushan Script', cursive;*/
@@ -426,7 +426,7 @@ body {
     width: 98%;
 }
 
-#contact-form .input input {
+#contact-form .input input, #subscribe-form .input input {
     background-color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -449,7 +449,7 @@ body {
     resize: none;
 }
 
-#submit-button {
+#submit-button, #subscribe-button {
     border: none;
     border-radius: 8px;
     color: #ffffff;
@@ -490,32 +490,50 @@ body {
     margin: 80px auto;
 /*    width: 80%;*/
 }
-/* END OF ABOUT PAGE*/
+/* END OF ABOUT PAGE */
 
+/* COMING SOON PAGE */
 .coming-soon-container {
 /*    background: #eaebeb url("../images/about/high-res/lasvegas-route55.jpg") no-repeat;*/
     background: #eaebeb url("../images/about/high-res/600.jpg") no-repeat;
     height: 800px;
     background-size: cover;
-    opacity: 1;
-
-}
-
-.coming-soon-container p:first-child{
-        font-size: 20px;
 }
 
 #coming-soon-form-container {
     padding: 20px 0;
     text-align: center;
-    background-color: #eee;
-    opacity: 0.5;
+    background: rgb(238, 238, 238); /* Fall-back for browsers that don't support rgba */
+    background: rgba(238, 238, 238, 0.4);
 }
 
-#coming-soon-form-container p, #coming-soon-form-container h1{
-    opacity: 1;
+#coming-soon-main-text {
+    font-size: 140%;
+    margin: 50px auto;
 }
 
+#coming-soon-fineprint-text {
+    font-size: 90%;
+    margin: 20px auto;
+    padding-bottom: 40px;
+}
+
+#subscribe-form .input {
+    border: none;
+    width: 47.8%;
+    margin: 12px auto;
+    box-sizing: border-box;
+}
+
+#coming-soon-form-container .social {
+    padding-bottom: 30px;
+}
+
+#coming-soon-form-container .social i {
+    background-color: #333333;
+}
+
+/* END OF COMING SOON PAGE */
 
 
 @media (min-width: 992px)
