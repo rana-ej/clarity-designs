@@ -166,7 +166,15 @@
 			$headers[] = "Subject: {$email_subject}";
 			$headers[] = "X-Mailer: PHP/".phpversion();
 
-			mail($email_to, $email_subject, $validated_email_message, implode("\r\n", $headers));
+			// Mail to report
+			$AcceptedForDelivery = false;
+			$AcceptedForDelivery = mail($email_to, $email_subject, $validated_email_message, implode("\r\n", $headers));
+			WriteToFile("EmailLog.html", ComposeEmailLogMessage($AcceptedForDelivery, $email_to, $email_subject, $validated_email_message, implode("\r\n", $headers)));
+
+			// Mail reply to submitter
+			$AcceptedForDeliveryReply = false;
+			$AcceptedForDeliveryReply = mail($Email, "Roadventures contact request successfully sent", "This is just a confirmation message for your records, we have received your message and if you have requested a response we will get back to you soon.\r\n" . $validated_email_message, implode("\r\n", $headers));
+			
 			/*
 			$headers = 'From: ' . $email_from . "\r\n".
 						'Reply-To: ' . $email_from . "\r\n" .
@@ -180,6 +188,26 @@
 			http_response_code(405);
 			echo "<BR>An unspecified error occurred, you may try again in a moment.";
 		}
+	}
+	
+	function WriteToFile($Filename, $Message)
+	{
+		$fullFilename  = dirname(__FILE__) . '/' . $Filename;
+		file_put_contents($fullFilename, $Message . PHP_EOL, FILE_APPEND);
+	}
+	
+	function ComposeEmailLogMessage($AcceptedForDelivery, $email_to, $email_subject, $validated_email_message, $headers)
+	{
+		$EmailLogMessage = "";
+		$dateStamp = date('Y-m-d H:i:s');
+		$EmailLogMessage .= "<Datestamp>{$dateStamp}</Datestamp>";
+		$EmailLogMessage .= "<Success>{$AcceptedForDelivery}</Success>";
+		$EmailLogMessage .= "<To>{$email_to}</To>";
+		$EmailLogMessage .= "<Subject>{$email_subject}</Subject>";
+		$EmailLogMessage .= "<Message>{$validated_email_message}</Message>";
+		$EmailLogMessage .= "<Headers>{$headers}</Headers>";
+		$EmailLogMessage = "<Email>{$EmailLogMessage}</Email>";
+		return $EmailLogMessage;
 	}
 	
 	function GetValueFromPostOrGet($requested_value)
