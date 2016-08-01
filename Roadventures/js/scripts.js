@@ -38,7 +38,7 @@ function SendEmailForm()
 	$.ajax
 	(
 		{ 
-			url: 'http://rana.carlstrom.fi/Roadventures/email-submit-form.php',
+			url: 'http://rana.carlstrom.fi/Roadventures/php/email-submit-form.php',
 			/*async: false,*/
 			dataType: "text",
 	        type: 'get',
@@ -49,6 +49,37 @@ function SendEmailForm()
 	         	lastname: LastName,
 	         	email: Email, 
 	         	message: Message 
+	        },
+	         
+	        success: EmailSubmitFormSuccess,
+            error: EmailSubmitFormError
+		}
+	);
+}
+
+function AddSubscriberForm()
+{
+	var Name = document.getElementById("subscribe-first-name").value;
+	var Email = document.getElementById("subscribe-email").value;
+
+	if(Name == "" || Email == "")
+	{	
+		alert("Please fill in all the fields before submitting.");
+		return;
+	}
+
+	$.ajax
+	(
+		{ 
+			url: 'http://rana.carlstrom.fi/Roadventures/php/add-subscriber.php',
+			/*async: false,*/
+			dataType: "text",
+	        type: 'get',
+			
+	        data:
+	        { 
+	         	name: Name, 
+	         	email: Email
 	        },
 	         
 	        success: EmailSubmitFormSuccess,
