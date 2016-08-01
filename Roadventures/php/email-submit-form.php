@@ -136,8 +136,7 @@
 		$EmailLogMessage .= "<Subject>{$email_subject}</Subject>";
 		$EmailLogMessage .= "<Message>{$validated_email_message}</Message>";
 		$EmailLogMessage .= "<Headers>{$headers}</Headers>";
-		$EmailLogMessage = "<Email>{$EmailLogMessage}</Email>";
-		return $EmailLogMessage;
+		return "<Email>{$EmailLogMessage}</Email><BR>\r\n";
 	}
 	
 	function GetValueFromPostOrGet($requested_value)

@@ -124,7 +124,20 @@
 		$EmailLogMessage .= "<Datestamp>{$dateStamp}</Datestamp>";
 		$EmailLogMessage .= "<Name>{$Name}</Name>";
 		$EmailLogMessage .= "<Email>{$Email}</Email>";
-		return $EmailLogMessage;
+		return "<Subscriber>{$EmailLogMessage}</Subscriber><BR>\r\n";
+	}
+	
+	function ComposeEmailLogMessage($AcceptedForDelivery, $email_to, $email_subject, $validated_email_message, $headers)
+	{
+		$EmailLogMessage = "";
+		$dateStamp = date('Y-m-d H:i:s');
+		$EmailLogMessage .= "<Datestamp>{$dateStamp}</Datestamp>";
+		$EmailLogMessage .= "<Success>{$AcceptedForDelivery}</Success>";
+		$EmailLogMessage .= "<To>{$email_to}</To>";
+		$EmailLogMessage .= "<Subject>{$email_subject}</Subject>";
+		$EmailLogMessage .= "<Message>{$validated_email_message}</Message>";
+		$EmailLogMessage .= "<Headers>{$headers}</Headers>";
+		return "<Email>{$EmailLogMessage}</Email><BR>\r\n";
 	}
 	
 	function GetValueFromPostOrGet($requested_value)
