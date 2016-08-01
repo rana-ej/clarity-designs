@@ -67,7 +67,7 @@ function AddSubscriberForm()
 		alert("Please fill in all the fields before submitting.");
 		return;
 	}
-
+	
 	$.ajax
 	(
 		{ 

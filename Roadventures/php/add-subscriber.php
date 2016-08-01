@@ -7,12 +7,12 @@
 	*/
 	header('Access-Control-Allow-Origin: *');
 
-	if (include('common/nocache.php') == FALSE) 
+	if ((include 'common/nocache.php') == FALSE) 
 	{
 		echo 'Failed to include nocache.php';
 	}
 
-	if (include('common/http_response_code.php') == FALSE) 
+	if ((include 'common/http_response_code.php') == FALSE) 
 	{
 		echo 'Failed to include http_response_code.php';
 	}
@@ -37,7 +37,7 @@
 	{     
 		$error_message = "";
 
-		$name = $FirstName;
+		$name = $Name;
 		$email_from = $Email;
 		 
 		$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';

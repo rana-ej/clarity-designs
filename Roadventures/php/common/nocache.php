@@ -1,6 +1,4 @@
 <?php
-	header('Access-Control-Allow-Origin: *');
-	
 	// Before Headers are sent
 	
 	// Set past expiration date
