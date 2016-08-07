@@ -85,7 +85,7 @@
 			// create email headers
 			// CHANGE THE TWO LINES BELOW
 			$email_to = "theroadventures@gmail.com";
-			$email_subject = "Roadventures form submissions";
+			$email_subject = "Roadventures - New Contact - {$FirstName} {$LastName}";
      
 			$headers   = array();
 			$headers[] = "MIME-Version: 1.0";
