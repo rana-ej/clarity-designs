@@ -550,12 +550,13 @@ p {
     padding: 20px 0;
     text-align: center;
     background: rgb(238, 238, 238); /* Fall-back for browsers that don't support rgba */
-    background: rgba(238, 238, 238, 0.4);
+    background: rgba(238, 238, 238, 0.5);
 }
 
 #coming-soon-main-text {
     font-size: 140%;
     margin: 50px auto;
+    padding: 10px 20px;
 }
 
 #coming-soon-fineprint-text {
