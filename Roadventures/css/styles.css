@@ -42,7 +42,7 @@ p {
 }
 
 .my-pages-navbar .my-pages-menu>li>a {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #ffffff;
     text-shadow: none;
     text-transform: uppercase;
@@ -86,8 +86,7 @@ p {
 
 #logo {
     font-family: 'Satisfy', cursive;
-/*	margin: 30px 30px;*/
-    font-size: 500%;
+    font-size: 400%;
     color: #ffe67b;
     margin: auto auto;
     padding-top: 20px;
@@ -248,27 +247,27 @@ p {
     -ms-transition: all ease 0.3s;
 }
 
-.social .fa-facebook:hover { /* round facebook icon*/
+.social .fa-facebook:hover, #coming-soon-form-container .social .fa-facebook:hover{ /* round facebook icon*/
     background: #4060A5;
 }
 
-.social .fa-twitter:hover { /* round twitter icon*/
+.social .fa-twitter:hover, #coming-soon-form-container .social .fa-twitter:hover{ /* round twitter icon*/
     background: #00ABE3;
 }
 
-.social .fa-pinterest:hover { /* round pinterest icon*/
+.social .fa-pinterest:hover, #coming-soon-form-container .social .fa-pinterest:hover{ /* round pinterest icon*/
     background: #cb2027;
 }
 
-.social .fa-instagram:hover { /* round instagram icon*/
+.social .fa-instagram:hover, #coming-soon-form-container .social .fa-instagram:hover{ /* round instagram icon*/
     background: #375989;
 }
 
-.social .fa-envelope:hover { /* round instagram icon*/
+.social .fa-envelope:hover, #coming-soon-form-container .social .fa-envelope:hover{ /* round instagram icon*/
     background: #123456;
 }
 
-.social .fa-file-text:hover { /* round instagram icon*/
+.social .fa-file-text:hover, #coming-soon-form-container .social .fa-file-text:hover{ /* round instagram icon*/
     background: #1aa2d9;
 }
 
@@ -472,7 +471,7 @@ p {
     width: 98%;
 }
 
-#contact-form .input input, #subscribe-form .input input {
+#contact-form .input input {
     background-color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -495,7 +494,7 @@ p {
     resize: none;
 }
 
-#submit-button, #subscribe-button {
+#submit-button {
     border: none;
     border-radius: 8px;
     color: #ffffff;
@@ -540,36 +539,61 @@ p {
 
 /* COMING SOON PAGE */
 .coming-soon-container {
-/*    background: #eaebeb url("../images/about/high-res/lasvegas-route55.jpg") no-repeat;*/
-    background: #eaebeb url("../images/about/high-res/600.JPG") no-repeat;
-    height: 800px;
+    background: #eaebeb url("../images/about/high-res/scotland-moors.jpg") no-repeat;
     background-size: cover;
 }
 
 #coming-soon-form-container {
-    padding: 20px 0;
+    color: #ffffff;
+    margin-top: 190px;
+    margin-bottom: 50px;
     text-align: center;
-    background: rgb(238, 238, 238); /* Fall-back for browsers that don't support rgba */
-    background: rgba(238, 238, 238, 0.5);
+/*    background: rgb(238, 238, 238);  Fall-back for browsers that don't support rgba 
+    background: rgba(238, 238, 238, 0.5);*/
 }
 
 #coming-soon-main-text {
     font-size: 140%;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 10px 20px;
 }
 
 #coming-soon-fineprint-text {
     font-size: 90%;
     margin: 20px auto;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 #subscribe-form .input {
+  width: 30%;
+  margin: 12px auto;
+  box-sizing: border-box;
+}
+
+#subscribe-form .input input {
+    background-color: #ffffff;
+    color: #444444;
     border: none;
-    width: 47.8%;
-    margin: 12px auto;
+    border-radius: 5px;
+    width: 100%;
+    line-height: 42px;
+    padding: 0 15px;
+    display: block;
+    outline-color: #000;
     box-sizing: border-box;
+}
+
+#subscribe-button {
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #1aa2d9;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0 35px;
+    line-height: 40px;
+    margin-top: 20px;
+    outline: none;
 }
 
 #coming-soon-form-container .social {
