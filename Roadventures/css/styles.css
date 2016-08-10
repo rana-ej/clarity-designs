@@ -1,5 +1,6 @@
 body {
     background-color: #eaebeb;
+    background-color: #ffffff;
     font-family: 'Lora', 'Times New Roman', serif;
     font-size: 20px;
 }
@@ -15,8 +16,11 @@ h6 {
 }
 
 p {
-  line-height: 1.5;
-  margin: 30px 0;
+  margin: 45px 0;
+  font-family: "Sabon W01",Georgia,"Times New Roman",serif;
+  color: #333;
+  font-size: 20px;
+  line-height: 37px;
 }
 
 .hidden {
@@ -556,12 +560,14 @@ p {
     font-size: 140%;
     margin: 20px auto;
     padding: 10px 20px;
+    color: #ffffff;
 }
 
 #coming-soon-fineprint-text {
     font-size: 90%;
     margin: 20px auto;
     padding-bottom: 20px;
+    color: #ffffff;
 }
 
 #subscribe-form .input {
@@ -606,6 +612,32 @@ p {
 /* END OF COMING SOON PAGE */
 
 /* ARTICLE PAGE */
+.share-menu {
+  list-style: none;
+  margin: 10px auto; 
+}
+
+.share-menu a {
+  color: #333;
+  text-decoration: none;
+}
+
+.share-menu li {
+  display: inline;
+  margin-right: 40px;
+}
+
+
+
+.capital-letter {
+  font-size: 120px;
+  padding-top: 28px;
+  padding-right: 8px;
+  display: block;
+  float: left;
+  line-height: 0.4;
+}
+
 blockquote {
   color: #777777;
   font-style: italic;
@@ -625,42 +657,22 @@ blockquote {
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 100px 0 50px;
-  color: white;
+  color: #ffffff;
 }
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading,
-  .intro-header .post-heading,
-  .intro-header .page-heading {
-    padding: 150px 0;
-  }
+
+.intro-header .post-heading{
+  padding: 150px 0;
 }
-.intro-header .site-heading,
-.intro-header .page-heading {
-  text-align: center;
-}
-.intro-header .site-heading h1,
-.intro-header .page-heading h1 {
+
+.intro-header .post-heading h1{
   margin-top: 0;
   font-size: 50px;
+  width: 460px;
+  line-height: 0.9;
+  font-family: "Univers W01","Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
 }
-.intro-header .site-heading .subheading,
-.intro-header .page-heading .subheading {
-  font-size: 24px;
-  line-height: 1.1;
-  display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  margin: 10px 0 0;
-}
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading h1,
-  .intro-header .page-heading h1 {
-    font-size: 80px;
-  }
-}
-.intro-header .post-heading h1 {
-  font-size: 35px;
-}
+
 .intro-header .post-heading .subheading,
 .intro-header .post-heading .meta {
   line-height: 1.1;
@@ -681,14 +693,7 @@ blockquote {
 .intro-header .post-heading .meta a {
   color: white;
 }
-@media only screen and (min-width: 768px) {
-  .intro-header .post-heading h1 {
-    font-size: 55px;
-  }
-  .intro-header .post-heading .subheading {
-    font-size: 30px;
-  }
-}
+
 .post-preview > a {
   color: #333333;
 }
@@ -722,11 +727,7 @@ blockquote {
   color: #0085A1;
   text-decoration: underline;
 }
-@media only screen and (min-width: 768px) {
-  .post-preview > a > .post-title {
-    font-size: 36px;
-  }
-}
+
 .section-heading {
   font-size: 36px;
   margin-top: 60px;
