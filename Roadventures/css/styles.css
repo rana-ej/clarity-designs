@@ -127,8 +127,9 @@ p {
 }
 
 #latest-destinations {
-	background-color: #eaebeb;
-    font-family: 'Didact Gothic', sans-serif;
+	/*background-color: #eaebeb;*/
+  background-color: #ffffff;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 #latest-destinations h1 {
